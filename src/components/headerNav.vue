@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link to="/" exact>How it works</router-link>
+          <router-link to="/" exact > How it works</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/about" exact>About us</router-link>
+          <router-link to="/about" exact >About us</router-link>
         </li>
         <li class="nav-item dropdown">
           <router-link to="/register" exact>Register as a Merchant</router-link>
@@ -170,10 +170,14 @@ button img {
 }
 
 .router-link-active {
-  background: #fff;
-  color: #b92828;
+  /*background: #fff;*/
+  /*color: #b92828;*/
+  color: black;
   padding: 5px;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
+
+  border-bottom: 3px solid #730319;
+;
 }
 
 
