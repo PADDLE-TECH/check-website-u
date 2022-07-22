@@ -9,21 +9,35 @@
             <div class="col-md-6 col-A1 col-sm-12 ">
                 <h3 class="imagine-a-life slide-in"><b>Imagine a life of no delay...</b></h3>
 
-                    <ul class="list1 slide-in-delay1">
-                        <!--<img src="../assets/images/Rectangle-19.png"><li>Restaurant menu at a glance</li><br>
-                        <img src="../assets/images/Rectangle-19.png"><li>Supermarket products on the go</li><br>
-                        <img src="../assets/images/Rectangle-19.png" class="bar"><li>Goodbye to change wahala & POS failure</li><br>
-                        <img src="../assets/images/Rectangle-19.png"><li>No stress, order comes to table</li><br>-->
+                <table>
+                    <tr>
+                        <td><img src="../assets/images2/Vector.png" ></td>
+                        <td>Restaurant menu at a glance</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/images2/Vector.png" ></td>
+                        <td>Supermarket products on the go</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/images2/Vector.png" ></td>
+                        <td>Goodbye to change wahala & POS failure</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/images2/Vector.png" ></td>
+                        <td>No stress, order comes to table</td>
+                    </tr>
+                </table>
 
+                    <!--<ul class="list1 slide-in-delay1">
                         <li><img src="../assets/images/Rectangle-19.png" class="rec" >Restaurant menu at a glance</li><br>
                         <li><img src="../assets/images/Rectangle-19.png" class="rec" >Supermarket products on the go</li><br>
                         <li><img src="../assets/images/Rectangle-19.png" class="rec" >Goodbye to change wahala & POS failure</li><br>
                         <li><img src="../assets/images/Rectangle-19.png" class="rec" >No stress, order comes to table</li><br>
-                    </ul>
+                    </ul>-->
 
                     <div class="stores col-xs-12">
                         <img src="../assets/pic1/shutterstock_2022250442-2.png" class="store1">
-                        <img src="../assets/pic1/shutterstock_2022250442-2-1.png" class="store2">
+                        <a href="https://play.google.com/store/apps/details?id=com.paddletech.check"><img src="../assets/pic1/shutterstock_2022250442-2-1.png" class="store2"></a>
                         <!--<img src="../assets/images/apple-logo.png" class="appleStore">-->
                         <!--<img src="../assets/images/playstore-logo.png" class="playStore">-->
                     </div>
@@ -170,6 +184,20 @@ export default {
     /*border: 1px solid red;*/
     margin-left: 0px;
 }
+table {
+        margin-left: 120px;
+        margin-top: 100px;
+}
+
+td {
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+    line-height: 20px;
+    padding-right: 20px;
+    font-family: 'Euclid Circular A';
+    padding-bottom: 20px;
+}
 .rec {
     transform: translateX(-20px);
 }
@@ -182,7 +210,7 @@ export default {
     margin-left: 23px;
 
 }
-li {
+/*li {
     list-style: none;
     font-style: normal;
     font-weight: 300;
@@ -201,9 +229,8 @@ ul {
     margin-left: 126px;
 }
 li img {
-    /*margin-right: 20px;*/
     display: inline-block;
-}
+}*/
 .appleStore {
     transform: scale(0.25) translate(-1270px, -200px);
     float: left;
@@ -284,19 +311,19 @@ li img {
     animation-duration: 2.5s;
 
 }*/
-ul li:nth-child(1) {
+table tr:nth-child(1) {
     animation-name: stagger;
     animation-duration: 1s;
 }
-ul li:nth-child(3) {
+table tr:nth-child(2) {
     animation-name: stagger;
     animation-duration: 3s;;
 }
-ul li:nth-child(5) {
+table tr:nth-child(3) {
     animation-name: stagger;
     animation-duration: 5s;
 }
-ul li:nth-child(7) {
+table tr:nth-child(4) {
     animation-name: stagger;
     animation-duration: 7s;
 }
@@ -359,11 +386,14 @@ ul li:nth-child(7) {
 /*Stagger animations for the list */
 
 @keyframes stagger {
- from {
+ 0% {
     opacity: 0;
     transform: translateY(20px);
  };
- to {
+ 10% {
+    opacity: 1;
+ }
+ 100% {
     opacity: 1;
     transform: translateY(0);
  }
@@ -407,10 +437,22 @@ ul li:nth-child(7) {
         /*word-break: break-all;*/
         margin-left: 20px;
     }
-    ul {
+    table {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    td {
+        text-align: left;
+        font-size: 18px;
+        line-height: 20px;
+        padding-right: 10px;
+        font-family: 'Euclid Circular A';
+        padding-bottom: 15px;
+    }
+    /*ul {
         margin: auto;
         margin-top: 50px;
-        /*border: 1px solid red;*/
         width: 380px;
         margin-left: 20px;
 
@@ -419,17 +461,16 @@ ul li:nth-child(7) {
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 15px;
-        /*width: 250px;*/
-        /*padding-right: -35px;*/
         padding-left: 0;
 
-    }
+    }*/
     li:nth-child(5){
         margin-right: 100px;
     }
     .stores {
         padding: 0px;
         transform: scale(0.9) translateX(-13px);
+        margin-top: -5px;
     }
     .store1 {
         transform: scale(0.75) translateX(20px);

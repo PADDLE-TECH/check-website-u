@@ -9,7 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link to="/" exact > How it works</router-link>
+          <router-link to="/" exact > Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/how-it-works" exact > How it works</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/about" exact >About us</router-link>
@@ -23,7 +26,7 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <button class="download-button" >Download App <img src="../assets/images/Vector-2.png"></button>
+        <button class="download-button" ><a href="https://play.google.com/store/apps/details?id=com.paddletech.check">Download App </a><img src="../assets/images/Vector-2.png"></button>
       </form>
     </div>
   </div>
@@ -59,7 +62,7 @@ export default {
 }
 
 ul {
-    transform: translateX(50px);
+    transform: translateX(10px);
 }
 nav {
     /*margin: 15px;*/
@@ -127,7 +130,7 @@ a:hover {
 
 }
 .download-button {
-    padding: 18px 46px 18px 39px;
+    padding: 14px 36px 16px 29px;
     /*width: 230px;
     height: 62px;*/
     border-radius: 40px;
@@ -137,6 +140,10 @@ a:hover {
     background-color: black;
     padding-left: -2px;
     text-align: center;
+    transform: scale(0.95);
+}
+.download-button a {
+    color: #fff;
 }
 button img {
     width: 32px;
@@ -163,6 +170,7 @@ button img {
 .menu-bar {
     width: 100%;
     height: 100%;
+    transform: 0.4s;
 }
 .router-link {
     text-decoration: none;
