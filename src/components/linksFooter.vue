@@ -2,10 +2,12 @@
 
     <div class="container-fluid">
         <div class="row">
-                <div class="col-md-3"><h3 class="footer">How it Works</h3></div>
-                <div class="col-md-3"><h3 class="footer" >About Us</h3></div>
-                <div class="col-md-3"><h3 class="footer" >Register as a Marchant </h3></div>
-                <div class="col-md-3"><h3 class="footer" ><router-link to="/policy" exact>Privacy Policy</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/" exact>Home</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer"><router-link to="/how-it-works" exact>How It Works</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/about" exact>About Us</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/register" exact>Register as a Marchant</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/policy" exact>Privacy Policy</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/support" exact>Support</router-link></h3></div>
             </div>
     </div>
 
@@ -34,9 +36,12 @@ a {
     color: #fff;
     text-decoration: none;
 }
+a:hover {
+    color: #e22020;
+}
 .footer {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     overflow-y: hidden;
 }
 
