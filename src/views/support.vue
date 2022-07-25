@@ -46,6 +46,7 @@
             <div class="col-md-7 support-column">
                 <div class="support-container">
                     <img src="../assets/images2/support2.jpg">
+                    <!--<div class="superHeader-mobile"><b>Contact Us</b></div>-->
                 </div>
             </div>
         </div>
@@ -160,8 +161,15 @@ export default {
         padding-right: 20px;
     }*/
     .superHeader {
-        margin-left: 20px;
-        margin-bottom: 30px;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        /*position: absolute;*/
+        color: rgb(255, 255, 255);
+        background: #000000;
+        margin-top: 10px;
+        width: 200%;
+        padding-left: 50px;
     }
     .address, .contact {
         margin-left: 20px;
@@ -180,6 +188,19 @@ export default {
         margin-top: -50px;
         margin-left: -130px;
     }
+    .support-container img {
+        position: relative;
+    }
+    /*.superHeader-mobile {
+        margin-left: 135px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        position: absolute;
+        color: rgb(255, 255, 255);
+        margin-top: -730px;
+        text-align: left;
+        font-family: 'Euclid Circular A';
+    }*/
 }
 
 
