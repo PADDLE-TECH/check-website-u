@@ -33,11 +33,11 @@
                     <div class="contact">
                         <h2><b>Social Media</b></h2>
                         <ul>
-                            <li><img src="../assets/icons/icons8-facebook.svg"></li>
-                            <li><img src="../assets/icons/icons8-instagram.svg"></li>
-                            <li><img src="../assets/icons/icons8-twitter.svg"></li>
+                            <li><a href="https://www.facebook.com/CheckRetail-109076205144232/"><img src="../assets/icons/icons8-facebook.svg"></a></li>
+                            <li><a href="https://instagram.com/check.retail?igshid=YmMyMTA2M2Y="><img src="../assets/icons/icons8-instagram.svg"></a></li>
+                            <!--<li><img src="../assets/icons/icons8-twitter.svg"></li>
                             <li><img src="../assets/icons/icons8-youtube.svg"></li>
-                            <li><img src="../assets/icons/icons8-linkedin.svg"></li>
+                            <li><img src="../assets/icons/icons8-linkedin.svg"></li>-->
                         </ul>
                         <h3></h3>
                     </div>
