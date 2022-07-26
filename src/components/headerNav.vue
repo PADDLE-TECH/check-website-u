@@ -21,9 +21,9 @@
           <router-link to="/register" exact>Register as a Merchant</router-link>
 
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <router-link to="/policy" exact>Privacy Policy</router-link>
-        </li>
+        </li>-->
       </ul>
       <form class="d-flex" role="search">
         <button class="download-button" ><a href="https://play.google.com/store/apps/details?id=com.paddletech.check">Download App </a><img src="../assets/images/Vector-2.png"></button>
@@ -62,7 +62,7 @@ export default {
 }
 
 ul {
-    transform: translateX(10px);
+    transform: translateX(60px);
 }
 nav {
     /*margin: 15px;*/
@@ -82,8 +82,8 @@ nav img {
 li {
     font-size: 16px;
     line-height: 22px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: Inter;
     font-weight: 400;
     padding-top: 10px;

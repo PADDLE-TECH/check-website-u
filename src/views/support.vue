@@ -45,7 +45,8 @@
             </div>
             <div class="col-md-7 support-column">
                 <div class="support-container">
-                    <img src="../assets/images2/support2.jpg">
+                    <img src="../assets/images2/support5.jpg" class="desktop-img">
+                    <img src="../assets/images2/support5.2.jpg" class="mobile-img">
                     <!--<div class="superHeader-mobile"><b>Contact Us</b></div>-->
                 </div>
             </div>
@@ -144,6 +145,9 @@ export default {
     animation-duration: 2s;
     transition: 0.4s ease;
 }
+.mobile-img {
+    display: none;
+}
 .support-column {
     background: #FFF6FF;
 }
@@ -185,11 +189,18 @@ export default {
     .support-container {
         transform: scale(0.9);
         margin-top: 0px;
-        margin-top: -50px;
+        margin-top: -30px;
         margin-left: -130px;
+        height: 400px;
     }
     .support-container img {
         position: relative;
+    }
+    .mobile-img {
+        display: block;
+    }
+    .desktop-img {
+        display: none;
     }
     /*.superHeader-mobile {
         margin-left: 135px;
