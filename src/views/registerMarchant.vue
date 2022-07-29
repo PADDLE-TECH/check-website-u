@@ -423,6 +423,7 @@ button:hover {
         margin-left: 20px;
         left: 0%;
         transform: translateX(0%);
+        margin-top: 40px;
         /*transform: translateX(-55%);*/
     }
     .how-we-built {
