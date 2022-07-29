@@ -210,7 +210,7 @@ export default {
     font-family: 'Euclid Circular A';
 }
 iframe {
-    border-radius: 40px;
+    border-radius: 15px;
 }
 
 .iframe-container {
@@ -871,7 +871,7 @@ ul li:nth-child(9) {
         margin-top: 100px;
     }
     .forth-row h2 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 60px;
         width: 350px;
     }
@@ -893,9 +893,10 @@ ul li:nth-child(9) {
         margin-top: 100px;
         margin-left: 20px;
         margin-bottom: 200px;
+        margin-right: 10px;
     }
     .fifth-row h2 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 60px;
     }
     .fifth-row h4 {

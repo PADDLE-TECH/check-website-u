@@ -363,10 +363,12 @@ button {
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
+    transition: all 0.4s ease;
+    border-radius: 10px;
 }
 button:hover {
-    transform: scale(1.09);
-    transition: all 0.2s ease;
+    transform: scale(1.05);
+    transition: all 0.4s ease;
     opacity: 0.9;
 }
 
