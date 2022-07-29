@@ -60,8 +60,9 @@
                 <h1 class="color-gradient">Your phone +<br> Our App +<br> The QR code =<br> A seamless transaction</h1>
             </div>-->
             <!--<div class="col-md-6">-->
-                <div class="iframe-container">
-                    <iframe width="1039" height="521" src="https://www.youtube.com/embed/JaUCiKTNBxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="iframe-container iframe-container-1">
+                    <!--<iframe width="1039" height="521" src="https://www.youtube.com/embed/JaUCiKTNBxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                    <iframe width="1039" height="521" src="https://www.youtube.com/embed/dvD-Mfvpvq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             <!--</div>-->
         </div>
@@ -81,18 +82,10 @@
         </div>
 
         <div class="row">
-            <!--<div class="col-md-6 second-youtube-row">
-                <h1 class="color-gradient">Get the app, say YES to convenient transactions</h1>
-                <div class="stores col-xs-12 second-stores">
-                    <img src="../assets/pic1/shutterstock_2022250442-2.png" class="store1">
-                    <img src="../assets/pic1/shutterstock_2022250442-2-1.png" class="store2">
-                </div>
-            </div>-->
-            <!--<div class="col-md-6">-->
-                <div class="iframe-container iframe-container-2">
+
+                <!--<div class="iframe-container iframe-container-2">
                     <iframe width="1039" height="521" src="https://www.youtube.com/embed/JaUCiKTNBxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            <!--</div>-->
+                </div>-->
         </div>
 
         <aos-vue animation="zoom-out">
@@ -131,7 +124,7 @@
                     <li><img src="../assets/images2/check-4-7.png" class="rec" >And also, an easy adoption rate by 60%</li><br>
                 </ul>
 
-                <button>Learn more</button>
+                <!--<router-link to="/about" exact ><button>Learn more</button></router-link>-->
             </div>
         </aos-vue>
 
@@ -452,7 +445,7 @@ ul li:nth-child(9) {
     width: 1298px;
     height: 649px;
     transform: scale(0.87);
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 50px;
 }
 .green-background h2 {
@@ -493,7 +486,7 @@ ul li:nth-child(9) {
 .forth-row {
     color: #000000;
     text-align: left;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .forth-row h2 {
     margin-left: 120px;
@@ -794,6 +787,9 @@ ul li:nth-child(9) {
         width: 100%;
         height: 100%;
         border-radius: 0px;
+    }
+    .iframe-container-1 {
+        margin-top: -50px;
     }
     .color-gradient {
         margin-left: 0px;

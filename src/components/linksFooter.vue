@@ -5,7 +5,7 @@
                 <div class="col-md-2"><h3 class="footer" ><router-link to="/" exact>Home</router-link></h3></div>
                 <div class="col-md-2"><h3 class="footer"><router-link to="/how-it-works" exact>How It Works</router-link></h3></div>
                 <div class="col-md-2"><h3 class="footer" ><router-link to="/about" exact>About Us</router-link></h3></div>
-                <div class="col-md-2"><h3 class="footer" ><router-link to="/register" exact>Register as a Marchant</router-link></h3></div>
+                <div class="col-md-2"><h3 class="footer" ><router-link to="/register" exact>Merchant</router-link></h3></div>
                 <div class="col-md-2"><h3 class="footer" ><router-link to="/policy" exact>Privacy Policy</router-link></h3></div>
                 <div class="col-md-2"><h3 class="footer" ><router-link to="/support" exact>Support</router-link></h3></div>
             </div>
