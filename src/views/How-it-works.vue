@@ -7,7 +7,7 @@
     <div class="container-fluid" id="how">
         <div class="row first-row" >
             <div class="col-md-7 col-A1 col-sm-12 ">
-                <aos-vue animation="fade-right"><h3 class="convinience slide-in">Convenience is now just a scan</h3></aos-vue>
+                <aos-vue animation="fade-right"><h3 class="convinience slide-in"><b>Convenience is just one scan away!</b></h3></aos-vue>
 
                 <table>
                     <tr>
@@ -32,21 +32,10 @@
                     </tr>
                 </table>
 
-                    <!--<ul class="list1 slide-in-delay1">
-                        <li><img src="../assets/images2/Vector.png" class="rec checkimg" ><span>Wondering when all transactions will just be seamless?</span></li><br>
-                        <li><img src="../assets/images2/Vector.png" class="rec checkimg" ><span>Tired of POS or change wahala?</span></li><br>
-                        <li><img src="../assets/images2/Vector.png" class="rec checkimg" ><span>Feeling unsafe with card transactions?</span></li><br>
-                        <li><img src="../assets/images2/Vector.png" class="rec checkimg" ><span>Tired of carrying cash and not sure on how it was spent?</span></li><br>
-                        <li><img src="../assets/images2/Vector.png" class="rec checkimg" ><span>Probably wondering how to avoid the next queue?</span></li><br>
-                    </ul>-->
-
                     <div class="stores col-xs-12">
                         <img src="../assets/pic1/shutterstock_2022250442-2.png" class="store1">
                         <a href="https://play.google.com/store/apps/details?id=com.paddletech.check"><img src="../assets/pic1/shutterstock_2022250442-2-1.png" class="store2"></a>
-
-                        <!--<img src="../assets/images2/play-btn.png" class="play-video"><h4 class="watch-video">Watch the Video</h4>-->
                     </div>
-                    <!--<div class="hide"><img src="../assets/images2/play-btn.png" class="play-video-mobile"><h4 class="watch-video-mobile">Watch the video</h4></div>-->
             </div>
             <div class="col-md-5 col-sm-12 col-xs-12 ">
                 <div class="img1-div col-xs-12 ">
@@ -55,17 +44,22 @@
             </div>
         </div>
 
-        <div class="row">
-            <!--<div class="col-md-6">
-                <h1 class="color-gradient">Your phone +<br> Our App +<br> The QR code =<br> A seamless transaction</h1>
-            </div>-->
-            <!--<div class="col-md-6">-->
+        <div class="row dark-background">
+            <div class="col-md-7 iframe-box">
+                <h2>I <img src="../assets/images2/love-1.png"> my customer, no be for mouth!</h2>
+                <iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--<h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do. Be sure to follow us so you don't miss a thing.</h3>-->
+            </div>
+            <div class="col-md-5 button-container">
+                <h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do.<br><br> Be sure to follow us so you don't miss a thing.</h3>
+                <button>Follow Us</button>
+            </div>
+        </div>
+
+        <!--<div class="row">
                 <div class="iframe-container iframe-container-1">
-                    <!--<iframe width="1039" height="521" src="https://www.youtube.com/embed/JaUCiKTNBxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                     <iframe width="1039" height="521" src="https://www.youtube.com/embed/dvD-Mfvpvq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            <!--</div>-->
-        </div>
+        </div>-->
 
         <div class="row second-row">
             <div class="col-md-6">
@@ -81,15 +75,33 @@
             </aos-vue>
         </div>
 
-        <div class="row">
-
-                <!--<div class="iframe-container iframe-container-2">
-                    <iframe width="1039" height="521" src="https://www.youtube.com/embed/JaUCiKTNBxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>-->
-        </div>
-
         <aos-vue animation="zoom-out">
-            <div class="row third-row green-background">
+            <!--<div class="row third-row green-background">
+                <div class=" col-md-7 ">
+                    <h2>Introducing scan & pay</h2><br><br>
+                    <p>The Scan and Pay Service is an avenue that CHECK-RETAIL has devised to make financial transactions easier, faster and most convenient. With features like the Scanner and an ultrafast secured wallet; you only get to fund the wallet and then make payments as easy as you would love it.<br><br>
+                    For restaurants and stores, You SCAN the QR code on arrival, order for items displayed through the user-friendly interface and pay immediately with your ultrafast secured wallet. The Merchant then receives your order, processes it and brings your order directly to you after verification.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../assets/images2/rotoititit-1.png">
+                </div>
+            </div>-->
+
+            <div class="row green-row">
+                <div class="col-md-8">
+                    <h2>Sharp sharp scan & pay, that  pays you!</h2>
+                    <h4>The Scan and Pay Service is an avenue that CHECK-RETAIL has devised to make financial transactions easier, faster and most convenient. With features like the Scanner and an ultrafast secured wallet; you only get to fund the wallet and then make payments as easy as you would love it.  <br><br>For restaurants and stores, You SCAN the QR code on arrival, order for items displayed through the user-friendly interface and pay immediately with your ultrafast secured wallet. The Merchant then receives your order, processes it and brings your order directly to you after verification.
+</h4>
+                </div>
+                <div class="col-md-4"><img src="../assets/images2/rotoititit-1.png"></div>
+            </div>
+
+
+        </aos-vue>
+
+
+        <!--<aos-vue animation="zoom-out">
+            <div class="row third-row green-background-mobile">
                 <div class=" col-md-7 ">
                     <h2>Introducing scan & pay</h2><br><br>
                     <p>The Scan and Pay Service is an avenue that CHECK-RETAIL has devised to make financial transactions easier, faster and most convenient. With features like the Scanner and an ultrafast secured wallet; you only get to fund the wallet and then make payments as easy as you would love it.<br><br>
@@ -99,39 +111,31 @@
                     <img src="../assets/images2/rotoititit-1.png">
                 </div>
             </div>
-        </aos-vue>
+        </aos-vue>-->
 
-
-        <div class="row third-row green-background-mobile">
-            <div class=" col-md-7 ">
-                <h2>Introducing scan & pay</h2><br><br>
-                <p>The Scan and Pay Service is an avenue that CHECK-RETAIL has devised to make financial transactions easier, faster and most convenient. With features like the Scanner and an ultrafast secured wallet; you only get to fund the wallet and then make payments as easy as you would love it.<br><br>
-                For restaurants and stores, You SCAN the QR code on arrival, order for items displayed through the user-friendly interface and pay immediately with your ultrafast secured wallet. The Merchant then receives your order, processes it and brings your order directly to you after verification.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="../assets/images2/rotoititit-1.png">
-            </div>
-        </div>
 
         <aos-vue animation="fade-up">
-            <div class="row forth-row">
-                <h2>Check Retail has helped 1000+ individuals</h2>
-                <ul class="list1 slide-in-delay1">
-                    <li><img src="../assets/images2/check-4-7.png" class="rec" >Save valuable time up to 50%</li><br>
-                    <li><img src="../assets/images2/check-4-7.png" class="rec" >Avoid money tension and failed transactions by 80%</li><br>
-                    <li><img src="../assets/images2/check-4-7.png" class="rec" >Reduce impulse spending up to 30%</li><br>
-                    <li><img src="../assets/images2/check-4-7.png" class="rec" >Stay in control of their order by 100% with the do-it-yourself feature</li><br>
-                    <li><img src="../assets/images2/check-4-7.png" class="rec" >And also, an easy adoption rate by 60%</li><br>
-                </ul>
+            <div class="row forth-row flex-column-reverse flex-md-row">
+                <div class="col-md-4"><img src="../assets/images2/rotoititit-1.png" class="phone"></div>
+                <div class="col-md-8">
+                    <h2><b>Check Retail helps thousands of smart people like you.</b></h2>
+                    <ul class="list1 slide-in-delay1">
+                        <li><img src="../assets/images2/check-4-7.png" class="rec" >Save valuable time up to 50%</li><br>
+                        <li><img src="../assets/images2/check-4-7.png" class="rec" >Avoid money tension and failed transactions by 80%</li><br>
+                        <li><img src="../assets/images2/check-4-7.png" class="rec" >Reduce impulse spending up to 30%</li><br>
+                        <li><img src="../assets/images2/check-4-7.png" class="rec" >Stay in control of their order by 100% with the do-it-yourself feature</li><br>
+                        <li><img src="../assets/images2/check-4-7.png" class="rec" >And also, an easy adoption rate by 60%</li><br>
+                    </ul>
+                    <!--<router-link to="/about" exact ><button>Learn more</button></router-link>-->
+                </div>
 
-                <!--<router-link to="/about" exact ><button>Learn more</button></router-link>-->
             </div>
         </aos-vue>
 
 
         <aos-vue animation="fade-up">
             <div class="row fifth-row">
-                <h2>Where can Check Retail be used?</h2><br><br>
+                <h2>Everywhere, anywhere!</h2><br><br>
                 <h4>CHECK for short can be used everywhere! As long as you are transacting with money, CHECK can assure you a safe, easy and convenient way of transacting. Businesses can now focus on better customer experiences, and we would ensure a convenient transaction along the way.</h4>
             </div>
         </aos-vue>
@@ -177,6 +181,7 @@ export default {
 
 <style scoped>
 @import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope&family=Poppins:wght@300;500;600&display=swap');
 .home {
     /*background: #FFF6FF;*/
     overflow-x: hidden;
@@ -203,7 +208,7 @@ export default {
     font-family: 'poppins';
     /*margin-top: 152px;*/
     /*margin-left: 110px;*/
-    width: 540px;
+    width: 530px;
     color: black;
     text-align: left;
     margin-left: 126px;
@@ -261,7 +266,7 @@ table tr:nth-child(5) {
     animation-duration: 9s;
 }
 .rec {
-    transform: translateX(-20px);
+    transform: translateX(-20px) scale(0.8);
 }
 .stores {
     margin-top: 20px;
@@ -376,13 +381,14 @@ ul li:nth-child(9) {
     animation-duration: 9s;
 }*/
 .img-container {
-   width: 518px;
+    width: 518px;
     height: 671px;
     overflow: hidden;
     border-radius: 30px;
     transition: 0.4s;
     margin-left: 106px;
     transform: scale(0.9);
+    margin-top: 200px;
 }
 .img-container img {
     border-radius: 37px;
@@ -401,9 +407,64 @@ ul li:nth-child(9) {
     text-align: left;
     /*margin-left: 50px;*/
 }
+.dark-background {
+    background-color: black;
+    color: #fff;
+    height: 613px;
+    margin-top: 40px;
+    margin-bottom: 138px;
+}
+.dark-background h2 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-left: 115px;
+    margin-top: 91px;
+}
+.dark-background iframe {
+    border-radius: 0px;
+    margin-left: 115px;
+    margin-top: 57px;
+}
+.button-container {
+    position: relative;
+}
+.dark-background h3 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: left;
+    width: 376px;
+    margin-left: 80px;
+    margin-top: 308px;
+}
+.dark-background button {
+    padding: 14px 32px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    left: 80px;
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: 93px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+.dark-background button:hover {
+    transform: scale(1.03);
+    /*opacity: 0.9;*/
+    transition: all 0.4s ease;
+}
 .second-row {
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: -150px;
+    padding-bottom: 200px;
+    background: #FFF7F8;
 }
 .second-row h2 {
     font-family: 'Euclid Circular A';
@@ -412,6 +473,10 @@ ul li:nth-child(9) {
     font-size: 80px;
     line-height: 90px;
     color: #000000;
+    margin-top: 200px;
+}
+.column-2 {
+    margin-top: 50px;
 }
 .column-2 h3 {
     font-family: 'Euclid Circular A';
@@ -434,10 +499,9 @@ ul li:nth-child(9) {
     width: 550px;
 }
 
-.green-background {
+/*.green-background {
     background: url(../assets/images2/Check-Website_000-1.png);
     background-repeat: no-repeat;
-    /*height: 100px;*/
     position: relative;
     text-align: left;
     color: #fff;
@@ -472,6 +536,41 @@ ul li:nth-child(9) {
 .green-background img {
     animation: swell 3s infinite;
     transition: 0.4s;
+}*/
+.green-row {
+    height: 743px;
+    background: #26753B;
+    color: #fff;
+    text-align: left;
+    margin-top: 0px;
+}
+.green-row h2 {
+    margin-left: 160px;
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    margin-top: 90px;
+}
+.green-row h4 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    margin-top: 50px;
+    width: 696px;
+}
+.green-row img {
+    margin-top: -215px;
+    transform: translateX(-170px);
+    animation: swell 3s infinite;
+    transition: 0.4s;
 }
 @keyframes swell {
     20% {transform: scale(1);};
@@ -486,28 +585,30 @@ ul li:nth-child(9) {
 .forth-row {
     color: #000000;
     text-align: left;
-    margin-top: 150px;
+    margin-top: 130px;
 }
 .forth-row h2 {
-    margin-left: 120px;
+    margin-left: 80px;
     font-family: 'Euclid Circular A';
     font-style: normal;
     font-weight: 500;
-    font-size: 60px;
-    line-height: 90px;
-    width: 723px;
+    font-size: 80px;
+    line-height: 100%;
+    width: 789px;
+    letter-spacing: -0.05em;
 }
 .forth-row ul {
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-top: 80px;
 }
 .forth-row li {
     font-family: 'Euclid Circular A';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     border-radius: 40px;
-    padding: 12px;
+    padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
     transition: 0.4s;
@@ -545,7 +646,7 @@ ul li:nth-child(9) {
     border: none;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: 120px;
+    margin-left: 0px;
     margin-top: 70px;
     transition: 0.4s;
 }
@@ -554,20 +655,27 @@ ul li:nth-child(9) {
     opacity: 0.8;
     transition: 0.4s;
 }
-
+.forth-row .phone {
+    /*transform: translateX(-50px);*/
+    margin-left: -80px;
+    margin-top: -150px;
+    transform: scale(0.9);
+}
 .fifth-row {
     color: #000000;
     text-align: left;
-    margin-top: 110px;
+    margin-top: -40px;
     margin-left: 120px;
     margin-bottom: 200px;
 }
 .fifth-row h2 {
     font-family: 'Euclid Circular A';
     font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 90px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    width: 529px;
+    display: block;
 }
 .fifth-row h4 {
     font-family: 'Euclid Circular A';
@@ -575,7 +683,9 @@ ul li:nth-child(9) {
     font-weight: 300;
     font-size: 24px;
     line-height: 40px;
-    width: 947px;
+    width: 732px;
+    margin-top: 30px;
+    display: block;
 }
 
 
@@ -669,6 +779,7 @@ ul li:nth-child(9) {
         /*border: 1px solid red;*/
         /*word-break: break-all;*/
         margin-left: 20px;
+        margin-top: -60px;
     }
     ul {
         margin: auto;
@@ -734,6 +845,39 @@ ul li:nth-child(9) {
     }
     .play-video, .watch-video  {
         display: none;
+    }
+    .dark-background {
+        margin-top: -100px;
+        height: 903px;
+    }
+    .dark-background h2 {
+        font-size: 50px;
+        margin-left: 20px;
+        margin-top: 20px0px;
+    }
+    .dark-background iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-top: 280px;
+    }
+    .iframe-box {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.24%;
+        height: 0;
+    }
+    .dark-background h3 {
+        margin-left: 20px;
+        width: 320px;
+        margin-top: 120px;
+    }
+    .dark-background button {
+        left: 20px;
     }
     /*.hide {
         display: inline-block;
@@ -815,11 +959,11 @@ ul li:nth-child(9) {
         transform: scale(0.6);
         display: flex;
         justify-content: center;
-        margin-top: -130px;
+        margin-top: -80px;
     }
     .column-2 {
         margin-left: 20px;
-        margin-top: -100px;
+        margin-top: -250px;
     }
     .column-2 h2 {
         font-size: 50px;
@@ -832,7 +976,7 @@ ul li:nth-child(9) {
     .column-2 h4 {
         width: 320px;
     }
-    .green-background-mobile {
+    /*.green-background-mobile {
         background: url(../assets/images2/Check-Website_000-1.png);
         background-repeat: no-repeat;
         text-align: left;
@@ -865,15 +1009,40 @@ ul li:nth-child(9) {
     }
     .green-background {
         display: none;
+    }*/
+    .second-row {
+        padding-bottom: 100px;
+    }
+    .green-row {
+        height: 1700px;
+        margin-top: 0px;
+    }
+    .green-row h2 {
+        font-size: 50px;
+        margin-left: 20px;
+        width: 350px;
+        margin-top: 40px;
+    }
+    .green-row h4 {
+        margin-left: 20px;
+        width: 330px;
+    }
+    .green-row img {
+        animation: none;
+        transform: scale(0.7) translateX(-270px);
     }
     .forth-row {
-        margin-left: -100px;
+        /*margin-left: -100px;*/
         margin-top: 100px;
     }
     .forth-row h2 {
         font-size: 40px;
-        line-height: 60px;
-        width: 350px;
+        line-height: 50px;
+        width: 330px;
+        margin-left: 20px;
+    }
+    .forth-row ul {
+        margin-left: 0px;
     }
     .forth-row li {
         border-radius: 15px;
@@ -889,8 +1058,12 @@ ul li:nth-child(9) {
     .forth-row button {
         margin-top: 10px;
     }
+    .forth-row .phone {
+        transform: scale(0.7);
+        margin-left: -190px;
+    }
     .fifth-row {
-        margin-top: 100px;
+        margin-top: -250px;
         margin-left: 20px;
         margin-bottom: 200px;
         margin-right: 10px;

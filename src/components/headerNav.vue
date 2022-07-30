@@ -12,7 +12,7 @@
           <router-link to="/" exact > Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/how-it-works" exact > How it works</router-link>
+          <router-link to="/how-it-works" exact > I &nbsp<img src="../assets/images2/love-2.png" class="heart"> &nbsp &nbsp my customer</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/about" exact >About us</router-link>
@@ -104,6 +104,7 @@ li:nth-child(2) {
     animation-duration: 1.5s;
     animation-delay: 0.5s;
     transition: all 0.4s ease;
+    position: relative;
 }
 li:nth-child(3) {
     animation-name: bounce;
@@ -118,7 +119,16 @@ li:nth-child(4) {
     transition: all 0.7s ease-in-out;
 }
 
+.heart {
+    transform: scale(1.5) translateY(5px);
+    /*height: 100%;
+    width: 100%;*/
+    width: 10px;
+    height: 10px;
+    /*display: inline-block;*/
+    position: absolute;
 
+}
 a {
     color: black;
     text-decoration: none;
