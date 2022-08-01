@@ -47,7 +47,7 @@
         <div class="row dark-background">
             <div class="col-md-7 iframe-box">
                 <h2>I <img src="../assets/images2/love-1.png"> my customer, no be for mouth!</h2>
-                <iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--<h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do. Be sure to follow us so you don't miss a thing.</h3>-->
+                <iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--<h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do. Be sure to follow us so you don't miss a thing.</h3>-->
             </div>
             <div class="col-md-5 button-container">
                 <h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do.<br><br> Be sure to follow us so you don't miss a thing.</h3>
@@ -75,7 +75,7 @@
             </aos-vue>
         </div>
 
-        <aos-vue animation="zoom-out">
+        <aos-vue animation="fade-in">
             <!--<div class="row third-row green-background">
                 <div class=" col-md-7 ">
                     <h2>Introducing scan & pay</h2><br><br>
@@ -352,7 +352,7 @@ li img {
 .img1 {
     /*width: 737px;
     height: 600px;*/
-    transform: scale(1) translateX(-103px);
+    transform: scale(1) translateX(-99px);
 
     margin-top: -60px;
     /*margin-right:130px;*/
@@ -569,7 +569,7 @@ ul li:nth-child(9) {
 .green-row img {
     margin-top: -215px;
     transform: translateX(-170px);
-    animation: swell 3s infinite;
+    /*animation: swell 3s infinite;*/
     transition: 0.4s;
 }
 @keyframes swell {

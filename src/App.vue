@@ -41,13 +41,13 @@ nav a.router-link-exact-active {
 
 .route-enter-from {
   opacity: 0;
-  /*transform: translateX(1800px);*/
-  transform: scaleX(0);
+  transform: translateX(1800px);
+  /*transform: scaleX(0);*/
 }
 .route-enter-to {
   opacity: 1;
-  /*transform: translateX(0);*/
-  transform: scaleX(1);
+  transform: translateX(0);
+  /*transform: scaleX(1);*/
 }
 .route-enter-active {
   transition: all 0.4s ease;
@@ -55,13 +55,13 @@ nav a.router-link-exact-active {
 
 .route-leave-from {
   opacity: 1;
-  /*transform: translateX(0);*/
-   transform: scaleX(1);
+  transform: translateX(0);
+   /*transform: scaleX(1);*/
 }
 .route-leave-to {
   opacity: 0;
-  /*transform: translateX(-1800px);*/
-  transform:scaleX(0);
+  transform: translateX(-1800px);
+  /*transform:scaleX(0);*/
 }
 .route-leave-active {
   transition: all 0.4s ease;
