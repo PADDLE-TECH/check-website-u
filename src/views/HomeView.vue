@@ -50,6 +50,7 @@
 
         </div>
 
+
         <div class="second-row">
             <div class="row ">
             <div class="row row2">
@@ -164,8 +165,8 @@ export default {
 .imagine-a-life {
     font-style: normal;
     font-weight: 600;
-    font-size: 85px;
-    line-height: 90px;
+    font-size: 80px;
+    line-height: 80px;
 
     letter-spacing: -0.05em;
     font-family: 'poppins';

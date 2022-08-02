@@ -47,11 +47,12 @@
         <div class="row dark-background">
             <div class="col-md-7 iframe-box">
                 <h2>I <img src="../assets/images2/love-1.png"> my customer, no be for mouth!</h2>
-                <iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--<h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do. Be sure to follow us so you don't miss a thing.</h3>-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!--<iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             </div>
             <div class="col-md-5 button-container">
-                <h3>CEO David Leon and Christina Barbara were Live on LinkedIn to talk about how a Culture of Care can shape everything you do.<br><br> Be sure to follow us so you don't miss a thing.</h3>
-                <button>Follow Us</button>
+                <h3>I love my customers  that’s why we out it upon us to simply make what they want. How our customers feel is vital to us, that’s why we’ve provided a smart shopping solution with Check</h3>
+                <!--<button>Follow Us</button>-->
             </div>
         </div>
 
@@ -202,7 +203,7 @@ export default {
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
-    line-height: 90px;
+    line-height: 80px;
 
     letter-spacing: -0.05em;
     font-family: 'poppins';
@@ -360,26 +361,6 @@ li img {
     animation-duration: 3s;*/
 }
 
-/*ul li:nth-child(1) {
-    animation-name: stagger;
-    animation-duration: 1s;
-}
-ul li:nth-child(3) {
-    animation-name: stagger;
-    animation-duration: 3s;;
-}
-ul li:nth-child(5) {
-    animation-name: stagger;
-    animation-duration: 5s;
-}
-ul li:nth-child(7) {
-    animation-name: stagger;
-    animation-duration: 7s;
-}
-ul li:nth-child(9) {
-    animation-name: stagger;
-    animation-duration: 9s;
-}*/
 .img-container {
     width: 518px;
     height: 671px;
@@ -429,6 +410,9 @@ ul li:nth-child(9) {
     border-radius: 0px;
     margin-left: 115px;
     margin-top: 57px;
+
+    /*New change for the scaled iframe*/
+    transform: scale(1.27) translate(18px, 38px);
 }
 .button-container {
     position: relative;
@@ -864,6 +848,9 @@ ul li:nth-child(9) {
         border-radius: 0px;
         margin-left: 0px;
         margin-top: 280px;
+
+        /*New change for the scaled iframe*/
+        transform: scale(1) translate(0px, 0px);
     }
     .iframe-box {
         position: relative;

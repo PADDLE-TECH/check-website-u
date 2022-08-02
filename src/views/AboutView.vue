@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-B2 col-md-6">
                     <aos-vue animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinknig of how to solve everyday problems in the retail space.</h3></aos-vue>
-                        <aos-vue animation="fade-left"><h3 class="we-wake2">We wake up every day to one course, thinknig of how to solve everyday problems in the retail space.</h3></aos-vue>
+                        <aos-vue animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your SHOPPING &TRANSACTIONS? WELL, CHECK-RETAIL IS OBSESSED ABOUT MAKING THINGS WORK FOR YOU AND YOUR BUSINESS!</h3></aos-vue>
                 </div>
             </div>
         </div>
@@ -245,7 +245,7 @@ export default {
     line-height: 50px;
     letter-spacing: -0.05em;
     width: 500px;
-    margin-top: 270px;
+    margin-top: 200px;
     text-align: left;
     font-family: 'Euclid Circular A';
 }
