@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-B2 col-md-6">
                     <aos-vue animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinknig of how to solve everyday problems in the retail space.</h3></aos-vue>
-                        <aos-vue animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your SHOPPING &TRANSACTIONS? WELL, CHECK-RETAIL IS OBSESSED ABOUT MAKING THINGS WORK FOR YOU AND YOUR BUSINESS!</h3></aos-vue>
+                        <aos-vue animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your shopping & transactions? Well, Check-Retail is obsessed about making things work for you and our business!</h3></aos-vue>
                 </div>
             </div>
         </div>
