@@ -40,7 +40,7 @@
                     <aos-vue animation="fade-right"><img src="../assets/images/man.png" class="calling img2"></aos-vue>
                 </div>
                 <div class="col-B2 col-md-6">
-                    <aos-vue animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinknig of how to solve everyday problems in the retail space.</h3></aos-vue>
+                    <aos-vue animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinking of how to solve everyday problems in the retail space.</h3></aos-vue>
                         <aos-vue animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your shopping & transactions? Well, Check-Retail is obsessed about making things work for you and our business!</h3></aos-vue>
                 </div>
             </div>
