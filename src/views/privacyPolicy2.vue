@@ -739,7 +739,8 @@ table td {
         position: absolute;
         right: 10px;
         display: inline-block;
-        transform:translateY(3px);
+        /*transform:translateY(3px);*/
+        margin-top: 5px;
     }
     .arrow {
         display: none;
