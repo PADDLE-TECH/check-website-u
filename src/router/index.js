@@ -32,8 +32,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/registerMarchant.vue')
   },
   {
-    path: '/policy',
-    name: 'policy',
+    path: '/policy2',
+    name: 'policy2',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -46,8 +46,15 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/support.vue')
+  },
+  {
+    path: '/policy',
+    name: 'policy',
+
+    component: () => import(/* webpackChunkName: "about" */ '../views/privacyPolicy2.vue')
   }
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

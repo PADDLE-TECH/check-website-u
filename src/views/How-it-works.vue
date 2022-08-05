@@ -199,6 +199,7 @@ export default {
     margin: 0%;
     padding: 0%;
 }
+
 .convinience {
     font-style: normal;
     font-weight: 500;
