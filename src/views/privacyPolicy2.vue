@@ -739,6 +739,7 @@ table td {
         position: absolute;
         right: 10px;
         display: inline-block;
+        transform:translateY(3px);
     }
     .arrow {
         display: none;
