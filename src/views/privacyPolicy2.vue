@@ -328,7 +328,7 @@
                 <section id="12" :class="read12 ? 'active-section' : 'notActive'">
                     <h2 @click="read12 = !read12" :class="read12 ? 'active' : 'notActive'">Personnel<i class="fa fa-angle-right arrow" aria-hidden="true"  :class="read12 ? 'rotate' : 'rotateBack'"></i></h2>
                     <i class="fa fa-angle-right arrow-mobile" aria-hidden="true" @click="read12 = !read12"  :class="read12 ? 'rotate' : 'rotateBack'"></i>
-                    <p v-show="read12">f you are a check retail worker or applicant, we collect information you voluntarily provide to us. We use the information collected for Human Resources purposes in order to administer benefits to workers and screen applicants.<br><br>
+                    <p v-show="read12">If you are a check retail worker or applicant, we collect information you voluntarily provide to us. We use the information collected for Human Resources purposes in order to administer benefits to workers and screen applicants.<br><br>
 
                       You may contact us in order to <br>(1) update or correct your information, <br>(2) change your preferences with respect to communications and other information you receive from us, or <br>(3) receive a record of the information we have relating to you. Such updates, corrections, changes and deletions will have no effect on other information that we maintain, or information that we have provided to third parties in accordance with this Privacy Policy prior to such update, correction, change or deletion.</p>
                 </section>
@@ -536,7 +536,7 @@ export default {
     align-items: center;
     letter-spacing: -0.05em;
     color: #000000;
-    margin-top: 187px;
+    margin-top: 100px;
 }
 .superHeader {
     display: flex;
