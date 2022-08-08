@@ -8,8 +8,8 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="box">
+            <div class="col-md-2">
+                <!--<div class="box">
                     <h2>Table of Content  </h2>
                     <a href="#1"><h3 class="first-content" :class="read1 ? 'active' : 'notActive'" @click="read1 = !read1">We are here to protect you?</h3></a>
                     <hr>
@@ -58,8 +58,7 @@
                     <a href="#22"><h3 :class="read22 ? 'active' : 'notActive'" @click="read22 = !read22">The Data Protection Principles include requirements such as:</h3></a>
                     <hr>
                     <a href="#23"><h3 :class="read23 ? 'active' : 'notActive'" @click="read23 = !read23">Contact Us</h3></a>
-                    <!--<hr>-->
-                </div>
+                </div>-->
             </div>
             <div class="col-md-8 section-box">
                 <section id="1" class="section1" :class="read1 ? 'active-section' : 'notActive'">
@@ -439,16 +438,17 @@
                       <table class="section3-table">
                         <tr>
                           <td><p><img src="../assets/images2/orange-dot.png" class="mark-icon"></p></td>
-                          <td><p>Via Email:  hello.paddle@gmail.com</p></td>
+                          <td><p><a href="mailto:hello.paddle@gmail.com">Via Email:  hello.paddle@gmail.com</a></p></td>
                         </tr>
                         <tr>
                           <td><p><img src="../assets/images2/orange-dot.png" class="mark-icon"></p></td>
-                          <td><p>Via Phone Number:  08149734622</p></td>
+                          <td><p><a href="tel:08149734622">Via Phone Number:  08149734622</a></p></td>
                         </tr>
                       </table>
                     </p>
                 </section>
             </div>
+            <div class="col-md-2"></div>
         </div>
 
     </div>
@@ -511,6 +511,7 @@ export default {
     position: relative;
 }*/
 
+
 .box::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
@@ -545,6 +546,11 @@ export default {
 .box a {
     text-decoration: none;
     color: #130B01;
+}
+
+section a {
+    text-decoration: none;
+    color: #888580;
 }
 .box {
     border: 1px solid #DEDEDE;
@@ -594,8 +600,9 @@ section {
     text-align: left;
     border: 1px solid #DEDEDE;
     border-radius: 12px;
-    margin-left: -50px;
-    width: 800px;
+    /*margin-left: -50px;*/
+
+    /*width: 800px;*/
     transition: all 0.4s ease;
     position: relative;
     margin-top: 24px;
