@@ -47,7 +47,7 @@
                     <li><img src="../assets/images/check-pink.png" class="check"><p class="list-text">Quick menu look-up for customer</p></li><br>
                     <img src="../assets/images/check-pink.png" class="check"><li><p class="list-text list3">No more change and POS delay</p></li><br><br>
 
-                    <a href="#form1"><button @click="form1 = !form1">Start Now</button></a>
+                    <a href="#form1"><button @click="form1 = !form1" class="btn-1">Start Now</button></a>
 
 
                 </ul>
@@ -57,12 +57,12 @@
     <transition name="form" mode="out-in" appear>
         <div class="modal-row" id="form1" v-show="form1">
             <div class="modal-content">
-                <form>
+                <form action="https://formsubmit.co/hello.paddle@gmail.com" method="POST">
                     <h2 @click="form1 = !form1">+</h2>
                     <h1>Drop your details, we will surely reach back!</h1>
-                    <input type="email" placeholder="Email" class="email-input" required><br>
-                    <input type="number" placeholder="Phone number" required><br>
-                    <input type="text" placeholder="Restaurant name" required><br>
+                    <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
+                    <input type="number" name="Phone-number" placeholder="Phone number eg: 08180334573" required><br>
+                    <input type="text" name="Company-name" placeholder="Company name" required><br>
                     <input type="submit" value="Contact me!" class="submit-btn">
                 </form>
             </div>
@@ -90,7 +90,7 @@
                     <li><img src="../assets/images/check-green.png" class="check"><p class="list-text">Quick menu look-up for customer</p></li><br>
                     <li><img src="../assets/images/check-green.png" class="check"><p class="list-text list6">No more change and POS delay</p></li><br><br>
 
-                    <button>Start Now</button>
+                     <a href="#form1"><button @click="form1 = !form1">Start Now</button></a>
 
                 </ul>
             </div>
@@ -314,7 +314,11 @@ export default {
 }*/
 .number1 {
     /*transform: translateY(-260px);*/
-    transform: translateY(15px);
+    transform: translateY(-5px);
+}
+.btn-1 {
+    /*transform: translateY(-50px);*/
+    margin-top: -50px;
 }
 .number2 {
     margin-left: 50px;
@@ -438,7 +442,7 @@ button:hover {
 }
 
 .modal-content {
-    position: sticky;
+    position: absolute;
     width: 759px;
     height: 970px;
     top: 223px;
@@ -486,7 +490,7 @@ button:hover {
     font-family: 'Euclid Circular A';
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 70px;
     /*display: flex;
     align-items: center;*/
@@ -603,7 +607,7 @@ button:hover {
     }
     .woman-with-phone-pic {
         margin-left: 0px;
-        margin-bottom: 204px;
+        margin-bottom: 84px;
 
         width: 320px;
         height: 463px;
@@ -685,10 +689,10 @@ button:hover {
     }
 
     .modal-content {
-        position: sticky;
+        position: absolute;
         width: 350px;
         height: 570px;
-        top: 223px;
+        top: 180px;
 
         border-radius: 10px;
         padding: 5px;
@@ -736,6 +740,7 @@ button:hover {
         margin-top: 33px;
         height: 65px;
         border-radius: 10px;
+        font-size: 26px;
     }
 
 }

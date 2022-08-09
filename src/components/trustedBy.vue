@@ -5,16 +5,40 @@
             <div class="col-E ">
                 <h3 class="trust">TRUSTED BY</h3>
                 <ul class="trusted-by-logos">
-                    <li class="by-logo"><img src="../assets/images/c-1.png"></li>
-                    <li class="by-logo" ><img src="../assets/images/c-2.png"></li>
-                    <li class="by-logo" ><img src="../assets/images/c-3.png"></li>
-                    <li class="by-logo" ><img src="../assets/images/c-4.png"></li>
-                    <li class="by-logo" ><img src="../assets/images/c-5.png"></li>
+                    <li class="by-logo1"><img src="../assets/images/c-1.png"></li>
+                    <li class="by-logo2" ><img src="../assets/images/c-2.png"></li>
+                    <li class="by-logo3" ><img src="../assets/images/c-3.png"></li>
+                    <li class="by-logo4" ><img src="../assets/images/c-4.png"></li>
+                    <li class="by-logo5" ><img src="../assets/images/c-5.png"></li>
                 </ul>
             </div>
         </div>
+        <div class="row wrap">
+            <!--<div class="col-xs-6 by-logo1"><img src="../assets/images/c-1.png"></div>
+            <div class="col-xs-6 by-logo2"><img src="../assets/images/c-2.png"></div>-->
+            <!--<div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>-->
+        </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <table>
+                <tr>
+                    <td><img src="../assets/images/c-1.png"></td>
+                    <td><img src="../assets/images/c-2.png"></td>
+                    <td><img src="../assets/images/c-3.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/c-4.png"></td>
+                    <td><img src="../assets/images/c-5.png"></td>
+                </tr>
+            </table>
+            <!--<div class="col-xs-6 by-logo1"><img src="../assets/images/c-1.png"></div>
+            <div class="col-xs-6 by-logo2"><img src="../assets/images/c-2.png"></div>-->
+        </div>
+    </div>
 </template>
 
 <script>
@@ -68,6 +92,9 @@ ul {
     margin-left: 40px;
     margin-right: 40px;
 }*/
+    table {
+        display: none;
+    }
 
 
 @media screen and (max-width: 700px) {
@@ -75,6 +102,50 @@ ul {
         transform: translateX(0px);
         margin-top: -0px;
         margin-bottom: 0px;
+        white-space: nowrap;
+
+        display: none;
+    }
+    li {
+        transform: scale(0.2);
+        display: inline-block;
+        margin-left: -150px;
+        margin-right: -10px;
+        padding: 0px;
+
+    }
+    .wrap {
+        white-space: nowrap;
+    }
+    .col-xs-6 {
+        transform: scale(0.2);
+        display: inline-block;
+    }
+    /*.by-logo1 {
+        display: inline-block;
+    }
+    .by-logo2 {
+        display: inline-block;
+    }*/
+    td{
+        /*border: 1px solid green;*/
+        padding: 20px;
+    }
+    td img {
+        /*transform: scale(0.1);*/
+        width: 60px;
+        height: 60px;
+    }
+    table {
+        margin-top: 50px;
+        display: inline-block;
+        margin-left: 20px;
+
+    }
+    tr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 </style>

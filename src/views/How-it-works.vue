@@ -833,7 +833,7 @@ li img {
     }
     .dark-background {
         margin-top: -100px;
-        height: 903px;
+        height: 720px;
     }
     .dark-background h2 {
         font-size: 50px;
@@ -862,7 +862,8 @@ li img {
     .dark-background h3 {
         margin-left: 20px;
         width: 320px;
-        margin-top: 120px;
+        margin-top: 170px;
+        transform: translateY(40px);
     }
     .dark-background button {
         left: 20px;

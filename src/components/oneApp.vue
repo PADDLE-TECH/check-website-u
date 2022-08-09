@@ -95,9 +95,11 @@
     }
     .one {
         font-size: 60px;
+        line-height: 60px;
     }
     .all {
         font-size: 60px;
+        line-height: 60px;
     }
 }
 </style>

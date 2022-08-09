@@ -102,9 +102,10 @@
         margin-right: 20px;
     }
     .QR {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 56.5px;
+        line-height: 50px;
         padding-left: 20px;
+        margin-right: 0px;
     }
     .you-are {
         width: 322px;

@@ -529,12 +529,12 @@ table tr:nth-child(4) {
         width: 100vw;
         margin-top: -250px;
         text-align: center;
-        height: 1800px;
+        height: 1720px;
     }
     .your-everyday {
         font-size: 58px;
         /*margin: auto;*/
-        margin-top: 150px;
+        margin-top: 80px;
         width: 250px;
         margin-left: 20px;
         /*margin-right: 390px;*/
@@ -555,10 +555,10 @@ table tr:nth-child(4) {
     }
     .img3 {
         /*transform: scale(0.3) translate(0px, 60px);*/
-        height: 260px;
+        height: 240px;
         width: 340px;
         display: block;
-        transform: translate(0px, -230px);
+        transform: translate(0px, -200px);
     }
 
 }
