@@ -47,12 +47,28 @@
                     <li><img src="../assets/images/check-pink.png" class="check"><p class="list-text">Quick menu look-up for customer</p></li><br>
                     <img src="../assets/images/check-pink.png" class="check"><li><p class="list-text list3">No more change and POS delay</p></li><br><br>
 
-                    <button>Start Now</button>
+                    <a href="#form1"><button @click="form1 = !form1">Start Now</button></a>
+
 
                 </ul>
             </div>
         </aos-vue>
     </div>
+    <transition name="form" mode="out-in" appear>
+        <div class="modal-row" id="form1" v-show="form1">
+            <div class="modal-content">
+                <form>
+                    <h2 @click="form1 = !form1">+</h2>
+                    <h1>Drop your details, we will surely reach back!</h1>
+                    <input type="email" placeholder="Email" class="email-input" required><br>
+                    <input type="number" placeholder="Phone number" required><br>
+                    <input type="text" placeholder="Restaurant name" required><br>
+                    <input type="submit" value="Contact me!" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </transition>
+
 
     <div class="row row2register">
         <!--<>-->
@@ -113,6 +129,12 @@ export default {
     oneApp,
     trustedBy,
     footerLinks
+  },
+  data() {
+    return {
+        form1: false,
+        form2: false
+    }
   }
 }
 
@@ -403,9 +425,137 @@ button:hover {
 .slide-from-right {
     animation: slide-from-right 1.5s;
 }
+.modal-row {
+    width: 100%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.modal-content {
+    position: sticky;
+    width: 759px;
+    height: 970px;
+    top: 223px;
 
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 77px;
+    text-align: left;
+}
+.modal-content h2 {
+    float: right;
+    /*text-align: right;*/
+    transform: rotate(45deg);
+    margin-top: -55px;
+    margin-right: -22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #464646;
+    cursor: pointer;
+}
+.modal-content h1 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+
+    color: #464646;
+    width: 514px;
+}
+.modal-content input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    padding: 85px 0px 16px px;
+    margin-bottom: 49px;
+    padding-bottom: 30px;
+
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 70px;
+    /*display: flex;
+    align-items: center;*/
+    letter-spacing: -0.05em;
+
+    color: #464646;
+    transition: all 0.4s ease;
+}
+.modal-content .email-input {
+    margin-top: 40px;
+}
+.modal-content .submit-btn {
+    color: rgb(255, 255, 255);
+    background: #EB001B;
+    /*height: 70px;*/
+    padding: 0px;
+    margin-top: 83px;
+    height: 85px;
+    border-radius: 10px;
+    border: none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 70px;
+    /* or 194% */
+
+    align-items: center;
+    letter-spacing: -0.05em;
+
+}
+.modal-content input:focus {
+    /*border: 2px solid #EB001B;*/
+   border: none;
+   border: 2px solid #EB001B;
+   outline: none;
+   border-radius: 8px;
+   padding: 10px;
+   transform: scale(1.02);
+   height: 60px;
+   transition: all 0.4s ease;
+}
+.form-enter-from {
+  opacity: 0;
+  transform: translateY(100px);
+  /*transform: scaleX(0);*/
+}
+.form-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+  /*transform: scaleX(1);*/
+}
+.form-enter-active {
+  transition: all 0.8s ease;
+}
+.form-leave-from {
+  opacity: 1;
+  transform: translateX(0);
+   /*transform: scaleX(1);*/
+}
+.form-leave-to {
+  opacity: 0;
+  transform: translateY(100px);
+  /*transform:scaleX(0);*/
+}
+.form-leave-active {
+  transition: all 0.8s ease;
+
+}
 
 
 
@@ -522,7 +672,71 @@ button:hover {
     button {
         margin-bottom: 90px;
     }
+    .modal-row {
+        width: 100%;
+        height: 200%;
+        background: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        top: 0;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        position: sticky;
+        width: 350px;
+        height: 570px;
+        top: 223px;
+
+        border-radius: 10px;
+        padding: 5px;
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+    .modal-content h2 {
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+    .modal-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        /* or 117% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.05em;
+
+        color: #464646;
+        width: 320px;
+    }
+    .modal-content input {
+        width: 100%;
+        height: 47px;
+        border: none;
+        border-bottom: 0.5px solid #000000;
+        padding: 25px 0px 16px 0px;
+        margin-bottom: 19px;
+
+
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.05em;
+
+        color: #464646;
+    }
+    .modal-content .email-input {
+        margin-top: 20px;
+    }
+    .modal-content .submit-btn {
+        padding: 0px;
+        margin-top: 33px;
+        height: 65px;
+        border-radius: 10px;
+    }
 
 }
 

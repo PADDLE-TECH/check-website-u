@@ -2,7 +2,7 @@
     <div id="nav-background">
         <nav class="navbar navbar-expand-lg bg-white py-3">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png"></a>
+    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" class="logo"></a>
     <div @click="showMenu = !showMenu" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><img v-show="!showMenu" src="../assets/icons/menu-bar.png" class="menu-bar"> <img v-show="showMenu" src="../assets/icons/close-icon.svg" class="menu-bar"> </span>
     </div>
@@ -212,6 +212,10 @@ button img {
     nav img {
         height: 40px;
         width: 130px;
+    }
+    .logo {
+        height: 35px;
+        width: 100px;
     }
     li {
         margin-left: 0%;

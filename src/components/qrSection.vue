@@ -4,7 +4,7 @@
         <div class="row qrSection">
             <aos-vue animation="fade-right" class="col-md-7 "><img src="../assets/images/woman.png" class="woman"></aos-vue>
             <div class="col-md-5">
-                <h1 class="QR">A QR technology enhanced future</h1>
+                <h1 class="QR"><b>A QR technology enhanced future</b></h1>
                 <p class="you-are">You are  here because the future matters. We  thought  of what you need and expressed it in this beautiful piece of technology.</p>
                 <button class="btn2">Download Now</button>
             </div>
@@ -103,7 +103,7 @@
     }
     .QR {
         font-size: 45px;
-        line-height: 50px;
+        line-height: 45px;
         padding-left: 20px;
     }
     .you-are {

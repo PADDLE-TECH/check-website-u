@@ -263,6 +263,7 @@ li img {
     /*position: absolute;*/
     left: 0px;
     /*transform: translate(0px, 0px);*/
+    overflow: hidden;
 }
 .your-everyday {
     color:#fff;
@@ -541,7 +542,7 @@ table tr:nth-child(4) {
     }
     .img2 {
         /*transform: scale(0.15) translate(-5750px, -21250px);*/  /* translate(-3300px, -8750px) */
-        height: 450px;
+        height: 410px;
         width: 320px;
         text-align: center;
         transform: translate(0px, -280px);
@@ -557,7 +558,7 @@ table tr:nth-child(4) {
         height: 260px;
         width: 340px;
         display: block;
-        transform: translate(0px, -270px);
+        transform: translate(0px, -230px);
     }
 
 }
