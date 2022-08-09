@@ -69,7 +69,7 @@
                 </div>
             </div>
             <aos-vue animation="fade-left" class="col-md-6 column-2">
-                <h2>We have the anwser!</h2><br>
+                <h2><b>We have the anwser!</b></h2><br>
                 <h3>Check-retail is what you have been looking for!</h3><br>
                 <h4>The fastest, easiest, and most convenient way of CHECKing out from restaurants, stores, and even simple day to day transactions with just a scan from your mobile devices.</h4>
                 <!--<div class=""><img src="../assets/images2/play-btn.png" class="play-video"><h4 class="watch-video">Watch the video</h4></div>-->
@@ -1001,6 +1001,10 @@ li img {
     }*/
     .second-row {
         padding-bottom: 100px;
+    }
+    .second-row h2 {
+        /*font-size: 40px;*/
+        line-height: 50px;
     }
     .green-row {
         height: 1700px;
