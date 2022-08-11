@@ -7,7 +7,7 @@
     <div class="container-fluid" id="how">
         <div class="row first-row" >
             <div class="col-md-7 col-A1 col-sm-12 ">
-                <aos-vue animation="fade-right"><h3 class="convinience slide-in"><b>Convenience is just one scan away!</b></h3></aos-vue>
+                <aos-vue animation="fade-in"><h3 class="convinience slide-in"><b>Convenience is just one scan away!</b></h3></aos-vue>
 
                 <table>
                     <tr>
@@ -48,6 +48,7 @@
             <div class="col-md-7 iframe-box">
                 <h2>I <img src="../assets/images2/love-1.png"> my customer, no be for mouth!</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 <!--<iframe width="713.7" height="392.4" src="https://www.youtube.com/embed/dvD-Mfvpvq4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             </div>
             <div class="col-md-5 button-container">
@@ -199,7 +200,9 @@ export default {
     margin: 0%;
     padding: 0%;
 }
-
+.first-row {
+    margin-top: 180px;
+}
 .convinience {
     font-style: normal;
     font-weight: 500;
@@ -216,7 +219,7 @@ export default {
     margin-left: 126px;
     font-family: 'Euclid Circular A';
 }
-iframe {
+/*iframe {
     border-radius: 15px;
 }
 
@@ -228,7 +231,7 @@ iframe {
 }
 .first-row {
     margin-top: 172px;
-}
+}*/
 .col-A1 {
     /*border: 1px solid red;*/
     margin-left: 0px;
@@ -833,15 +836,15 @@ li img {
     }
     .dark-background {
         margin-top: -100px;
-        height: 720px;
+        height: 620px;
     }
     .dark-background h2 {
         font-size: 50px;
         margin-left: 20px;
-        margin-top: 20px0px;
+        margin-top: 40px;
     }
     .dark-background iframe {
-        position: absolute;
+        /*position: absolute;*/
         top: 0;
         left: 0;
         width: 100%;
@@ -851,19 +854,21 @@ li img {
         margin-top: 280px;
 
         /*New change for the scaled iframe*/
-        transform: scale(1) translate(0px, 0px);
+        transform: scale(1) translate(0px, -250px);
+
+        height: auto;
     }
     .iframe-box {
-        position: relative;
+        /*position: relative;*/
         width: 100%;
         padding-bottom: 56.24%;
-        height: 0;
+        /*height: 0;*/
     }
     .dark-background h3 {
         margin-left: 20px;
         width: 320px;
-        margin-top: 170px;
-        transform: translateY(40px);
+        margin-top: -400px;
+        transform: translateY(0px);
     }
     .dark-background button {
         left: 20px;
@@ -907,7 +912,7 @@ li img {
     }
 
 
-    .iframe-container {
+    /*.iframe-container {
         position: relative;
         width: 100%;
         padding-bottom: 56.24%;
@@ -923,7 +928,7 @@ li img {
     }
     .iframe-container-1 {
         margin-top: -50px;
-    }
+    }*/
     .color-gradient {
         margin-left: 0px;
         width: 350px;

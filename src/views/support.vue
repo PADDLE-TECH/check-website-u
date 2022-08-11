@@ -23,9 +23,9 @@
                 <div class="rowddd">
                     <div class="contact">
                         <h2><b>Checkretail Connect</b></h2>
-                        <h3>Tel: +234 903 771 6931</h3>
-                        <h3>Tel: 08149734622</h3>
-                        <h3>Tel: +234 808 462 2379</h3>
+                        <h3><a href="tel:+234 903 771 6931">Tel: +234 903 771 6931</a></h3>
+                        <h3><a href="tel:08149734622">Tel: 08149734622</a></h3>
+                        <h3><a href="tel:+234 808 462 2379">Tel: +234 808 462 2379</a></h3>
                     </div>
                 </div>
 
@@ -91,7 +91,10 @@ export default {
     padding: 0%;
     overflow-x: hidden;
 }
-
+a {
+    color: black;
+    text-decoration: none;
+}
 .superHeader {
     color: black;
     font-family: 'Euclid Circular A';

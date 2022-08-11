@@ -102,8 +102,9 @@
         margin-right: 20px;
     }
     .QR {
-        font-size: 56.5px;
-        line-height: 50px;
+        /*font-size: 56.5px;*/
+        font-size: 45px;
+        line-height: 43px;
         padding-left: 20px;
         margin-right: 0px;
     }

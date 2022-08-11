@@ -532,10 +532,10 @@ table tr:nth-child(4) {
         height: 1720px;
     }
     .your-everyday {
-        font-size: 58px;
+        font-size: 45px;
         /*margin: auto;*/
         margin-top: 80px;
-        width: 250px;
+        width: 290px;
         margin-left: 20px;
         /*margin-right: 390px;*/
         line-height: 50px;
@@ -558,7 +558,7 @@ table tr:nth-child(4) {
         height: 240px;
         width: 340px;
         display: block;
-        transform: translate(0px, -200px);
+        transform: translate(0px, -100px);
     }
 
 }

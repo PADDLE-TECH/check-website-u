@@ -5,14 +5,27 @@
     <appHeader></appHeader>
 
     <div class="container-fluid">
-        <div class="grid-contain-1 row">
-                <div class="first-container">
+        <div class="grid-contain-1 row flex-column-reverse flex-md-row">
+                <div class="first-container col-md-6">
 
-                    <h3 class="we-are-obsessed slide-from-right">We are obsessed about making things work for you and your business!</h3>
-                    <h3 class="how-we-built slide-in">How we built the solution that works for you</h3>
+                    <h3 class="we-are-obsessed slide-in">We are obsessed about making things work for you and your business!</h3>
+                    <h3 class="how-we-built slide-in-delay">How we built the solution that works for you</h3>
 
                     <h3 class="our-expert">Our expert engineers use technically driven deep algorithm to power our QR code system which is the anchor of  our innovation.
                     The QR code technology is a faster way to send and receive data which eliminates every form of failure and disconnection in your transactions. </h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="modal-content fade-up" id="form1">
+                        <form action="https://formsubmit.co/hello.paddle@gmail.com" method="POST">
+                            <!--<h2 @click="form1 = !form1">+</h2>-->
+                            <h1>Drop your details, we will surely reach back!</h1>
+                            <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
+                            <input type="number" name="Phone-number" placeholder="Phone number eg: 08180334573" required><br>
+                            <input type="text" name="Company-name" placeholder="Company name" required><br>
+                            <input type="submit" value="Contact me!" class="submit-btn">
+                        </form>
+                    </div>
                 </div>
 
         </div>
@@ -54,7 +67,9 @@
             </div>
         </aos-vue>
     </div>
-    <transition name="form" mode="out-in" appear>
+
+
+    <!--<transition name="form" mode="out-in" appear>
         <div class="modal-row" id="form1" v-show="form1">
             <div class="modal-content">
                 <form action="https://formsubmit.co/hello.paddle@gmail.com" method="POST">
@@ -67,7 +82,7 @@
                 </form>
             </div>
         </div>
-    </transition>
+    </transition>-->
 
 
     <div class="row row2register">
@@ -164,6 +179,7 @@ export default {
     /*transform: translateY(-275px);*/
     /*margin-top: -270px;*/
     position: relative;
+    margin-bottom: 200px;
 }
 .color {
     background-color: #FFF6FF;
@@ -177,21 +193,22 @@ export default {
     font-family: 'poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height: 70px;
     text-align: center;
     letter-spacing: -0.05em;
-    width: 1000px;
+    /*with was formally 1000px */
+    width: 550px;
 
-    /* margin-left: 131px; */
-    margin-top: 122px;
-
+    margin-top: 182px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-
+    transform: translateX(-44%);
     color: black;
     font-family: 'Euclid Circular A';
+
+    /* margin-left: 131px; */
+    text-align: left;
 }
 .how-we-built {
     font-family: 'poppins';
@@ -200,22 +217,24 @@ export default {
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     margin-top: 91px;
     color: black;
+
+    margin-left: 90px;
 }
 .our-expert {
     font-family: 'poppins';
-    text-align: center;
+    /*text-align: center;*/
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    text-align: center;
-    width: 661px;
+    text-align: left;
+    width: 561px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-44%);
     margin-top: 26px;
     color: black;
 }
@@ -420,20 +439,51 @@ button:hover {
         opacity: 1;
     }
 }
+@keyframes fade-up {
+    0% {
+        transform: translateY(455px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        };
+    30% {
+        transform: translateY(140px);
+        opacity: 0.7;
+        transition: all 0.4s ease;
+        };
+    70% {
+        transform: translateY(55px);
+        opacity: 0.9;
+        transition: all 0.4s ease;
+        };
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 0.4s ease;
+        }
+}
 /*.slide-from-up {
     animation: slide-from-up 1.5s;
 }*/
 .slide-in {
-    animation: slide-in 2.5s;
+    animation: slide-in 1.5s;
+}
+.slide-in-delay {
+    animation: slide-in 1.9s;
 }
 .slide-from-right {
     animation: slide-from-right 1.5s;
+}
+.fade-up {
+    animation-name: fade-up;
+    animation-duration: 1.5s;
+    transition: all 0.4s ease;
 }
 .modal-row {
     width: 100%;
     height: 200%;
     background: rgba(0, 0, 0, 0.75);
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     top: 0;
 
     display: flex;
@@ -441,7 +491,7 @@ button:hover {
     align-items: center;
 }
 
-.modal-content {
+/*.modal-content {
     position: absolute;
     width: 759px;
     height: 970px;
@@ -451,6 +501,98 @@ button:hover {
     border-radius: 20px;
     padding: 77px;
     text-align: left;
+}
+.modal-content h2 {
+    float: right;
+    transform: rotate(45deg);
+    margin-top: -55px;
+    margin-right: -22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #464646;
+    cursor: pointer;
+}
+.modal-content h1 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+
+    color: #464646;
+    width: 514px;
+}
+.modal-content input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    padding: 85px 0px 16px px;
+    margin-bottom: 49px;
+    padding-bottom: 30px;
+
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+
+    color: #464646;
+    transition: all 0.4s ease;
+}
+.modal-content .email-input {
+    margin-top: 40px;
+}
+.modal-content .submit-btn {
+    color: rgb(255, 255, 255);
+    background: #EB001B;
+    padding: 0px;
+    margin-top: 83px;
+    height: 85px;
+    border-radius: 10px;
+    border: none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 70px;
+
+
+    align-items: center;
+    letter-spacing: -0.05em;
+
+}
+.modal-content input:focus {
+   border: none;
+   border: 2px solid #EB001B;
+   outline: none;
+   border-radius: 8px;
+   padding: 10px;
+   transform: scale(1.02);
+   height: 60px;
+   transition: all 0.4s ease;
+}*/
+
+
+
+
+.modal-content {
+    position: relative;
+    width: 659px;
+    height: 770px;
+    top: 123px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 47px;
+    text-align: left;
+    border: none;
+    transition: all 0.4s ease;
 }
 .modal-content h2 {
     float: right;
@@ -507,7 +649,7 @@ button:hover {
     background: #EB001B;
     /*height: 70px;*/
     padding: 0px;
-    margin-top: 83px;
+    margin-top: 53px;
     height: 85px;
     border-radius: 10px;
     border: none;
@@ -533,6 +675,12 @@ button:hover {
    height: 60px;
    transition: all 0.4s ease;
 }
+
+
+
+
+
+
 .form-enter-from {
   opacity: 0;
   transform: translateY(100px);
@@ -568,10 +716,11 @@ button:hover {
         text-align: left;
         height: 1200px;
         margin-left: 0%;
+        margin-bottom: 20px;
     }
     .we-are-obsessed {
-        font-size: 60px;
-        line-height: 70px;
+        font-size: 45px;
+        line-height: 50px;
         text-align: left;
         width: 350px;
         margin-left: 20px;
@@ -584,6 +733,7 @@ button:hover {
         text-align: left;
         margin-left: 20px;
         width: 350px;
+        margin-top: 30px;
     }
     .our-expert {
         text-align: left;
@@ -600,7 +750,7 @@ button:hover {
     .table {
         margin-left: 0px;
         margin-bottom: 204px;
-
+        margin-top: -500px;
         width: 320px;
         /*height: 523px;*/
         height: 463px;
@@ -680,7 +830,8 @@ button:hover {
         width: 100%;
         height: 200%;
         background: rgba(0, 0, 0, 0.75);
-        position: absolute;
+        /*position: absolute;*/
+        position: relative;
         top: 0;
 
         display: flex;
@@ -689,10 +840,10 @@ button:hover {
     }
 
     .modal-content {
-        position: absolute;
+        position: relative;
         width: 350px;
         height: 570px;
-        top: 180px;
+        top: 0px;
 
         border-radius: 10px;
         padding: 5px;
@@ -716,6 +867,8 @@ button:hover {
 
         color: #464646;
         width: 320px;
+
+        margin-top: 40px;
     }
     .modal-content input {
         width: 100%;
