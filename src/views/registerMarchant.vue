@@ -750,7 +750,7 @@ button:hover {
     .table {
         margin-left: 0px;
         margin-bottom: 204px;
-        margin-top: -500px;
+        margin-top: -400px;
         width: 320px;
         /*height: 523px;*/
         height: 463px;
