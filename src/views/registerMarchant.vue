@@ -33,10 +33,11 @@
 
     <div class="row row2register">
 
-        <aos-vue animation="fade-right" class="col-md-6">
-            <aos-vue animation="fade-in">
+        <aos-vue animation="" class="col-md-6">
+            <aos-vue animation="fade-right">
                 <img src="../assets/images/Vector-34.png" class="table">
             </aos-vue>
+            <img src="../assets/images/Vector-34.png" class="table2">
 
         </aos-vue>
 
@@ -249,6 +250,14 @@ export default {
 
     width: 520px;
     height: 703px;
+}
+.table2 {
+    margin-left: 80px;
+    margin-bottom: 204px;
+
+    width: 520px;
+    height: 703px;
+    display: none;
 }
 .woman-with-phone-pic {
     margin-left: 0px;
@@ -751,6 +760,16 @@ button:hover {
         margin-left: 0px;
         margin-bottom: 204px;
         margin-top: -400px;
+        width: 320px;
+        /*height: 523px;*/
+        height: 463px;
+        display: none;
+    }
+    .table2 {
+        display: inline-block;
+       margin-left: 0px;
+        margin-bottom: 204px;
+        margin-top: -500px;
         width: 320px;
         /*height: 523px;*/
         height: 463px;
