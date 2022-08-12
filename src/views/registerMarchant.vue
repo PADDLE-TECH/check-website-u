@@ -21,7 +21,7 @@
                             <!--<h2 @click="form1 = !form1">+</h2>-->
                             <h1>Drop your details, we will surely reach back!</h1>
                             <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
-                            <input type="number" name="Phone-number" placeholder="Phone number eg: 08180334573" required><br>
+                            <input type="tel" name="Phone-number" placeholder="Phone number eg: 08180334573"  required><br>
                             <input type="text" name="Company-name" placeholder="Company name" required><br>
                             <input type="submit" value="Contact me!" class="submit-btn">
                         </form>
@@ -634,9 +634,9 @@ button:hover {
     height: 50px;
     border: none;
     border-bottom: 0.5px solid #000000;
-    padding: 85px 0px 16px px;
-    margin-bottom: 49px;
-    padding-bottom: 30px;
+    padding: 25px 0px 12px px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
 
     font-family: 'Euclid Circular A';
     font-style: normal;
@@ -658,7 +658,7 @@ button:hover {
     background: #EB001B;
     /*height: 70px;*/
     padding: 0px;
-    margin-top: 53px;
+    margin-top: 40px;
     height: 85px;
     border-radius: 10px;
     border: none;

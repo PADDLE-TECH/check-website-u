@@ -393,7 +393,11 @@ table tr:nth-child(4) {
     transform: translateY(20px);
  };
  10% {
-    opacity: 1;
+    opacity: 0;
+ };
+ 98% {
+    opacity: 0;
+    transform: translateY(3px);
  }
  100% {
     opacity: 1;
