@@ -2,8 +2,8 @@
 
     <div class="container-fluid">
         <div class="row qrSection">
-            <aos-vue animation="fade-right" class="col-md-7 "><img src="../assets/images/woman.png" class="woman"></aos-vue>
-            <div class="col-md-5">
+            <aos-vue animation="fade-right" class="col-md-7 col-sm-4"><img src="../assets/images/woman.png" class="woman"></aos-vue>
+            <div class="col-md-5 col-sm-8">
                 <h1 class="QR"><b>A QR technology enhanced future</b></h1>
                 <p class="you-are">You are  here because the future matters. We  thought  of what you need and expressed it in this beautiful piece of technology.</p>
                 <button class="btn2">Download Now</button>
@@ -93,7 +93,7 @@
     transition: all 0.4s ease;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 425px){
     .woman {
         width: 355px;
         height: 255px;
@@ -117,6 +117,39 @@
     }
     .qrSection {
         margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .woman {
+        width: 455px;
+        height: 455px;
+        margin-top: 50px;
+
+        margin-right: 40px;
+        transform: translateX(-10px);
+    }
+    .QR {
+        /*font-size: 56.5px;*/
+        font-size: 45px;
+        line-height: 43px;
+        padding-left: 20px;
+        margin-right: 0px;
+    }
+    .you-are {
+        width: 322px;
+        margin-left: 20px;
+    }
+    .btn2 {
+        margin-left: 20px;
+        padding: 15px 25px 16px 25px;
+    }
+    .qrSection {
+        margin-bottom: 50px;
+    }
+    .col-md-5 {
+        margin-left: -20px;
     }
 
 }

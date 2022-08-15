@@ -23,7 +23,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="table-row">
             <table>
                 <tr>
                     <td><img src="../assets/images/c-1.png"></td>
@@ -96,8 +96,39 @@ ul {
         display: none;
     }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #table-row {
+        /*text-align: center;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        transform: translateX(0px);
+        margin-top: -0px;
+        margin-bottom: 0px;
+        white-space: nowrap;
 
-@media screen and (max-width: 700px) {
+        display: none;
+    }
+    table {
+        margin-top: 50px;
+        display: inline-block;
+        margin-left: 60px;
+        /*margin: 0 auto;*/
+
+    }
+    td img {
+        width: 170px;
+        height: 170px;
+    }
+    td{
+        /*border: 1px solid green;*/
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     ul {
         transform: translateX(0px);
         margin-top: -0px;
@@ -121,18 +152,12 @@ ul {
         transform: scale(0.2);
         display: inline-block;
     }
-    /*.by-logo1 {
-        display: inline-block;
-    }
-    .by-logo2 {
-        display: inline-block;
-    }*/
+
     td{
-        /*border: 1px solid green;*/
+        border: 1px solid green;
         padding: 20px;
     }
     td img {
-        /*transform: scale(0.1);*/
         width: 60px;
         height: 60px;
     }
@@ -147,5 +172,8 @@ ul {
         justify-content: center;
         align-items: center;
     }
+
 }
+
+
 </style>

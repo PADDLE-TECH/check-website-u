@@ -324,7 +324,7 @@ export default {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 425px) {
     .green-circle {
         height:59px;
         width: 59px;
@@ -436,5 +436,115 @@ export default {
 
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .green-circle {
+        height:59px;
+        width: 59px;
+        margin-left: -145px;
+        margin-top: 9px;
+    }
+    .bulb {
+        Width: 49.31px;
+        height: 49.97px;
+        transform: translateX(46px);
+        margin-top: 59px;
+    }
+    .we-are-a-company {
+        margin-left: 20px;
+        font-size: 45px;
+        line-height: 45px;
+        width: 550px;
+    }
+    .yellow-woman {
+        transform: translateX(-70px) translateY(0px);
+        width: 72.38px;
+        height: 72.38px;
+    }
+    .people {
+        font-size: 22px;
+        line-height: 30px;
+        margin-left: 20px;
+        width: 550px;
+        margin-top: 0px;
+    }
+    .peach-circle {
+        margin-left: 50px;
+        width: 59px;
+        height: 59px;
+        margin-top: 30px;
+        transform: translateX(-60px);
+        margin-bottom: 0px;
+    }
+    .purple-guy {
+        margin-top: -1160px;
+        transform: translateX(190px);
+        height: 80px;
+        width: 80px;
+    }
+    .lady {
+        margin-top: -750px;
+        transform: translateX(90px);
+        height: 50px;
+        width: 50px;
+    }
+    .man {
+        margin-top: 0px;
+        transform: translateX(0px);
+        height: 80px;
+        width: 80px;
+    }
+    .your-everyday {
+        font-size: 40px;
+        /*margin: auto;*/
+        margin-top: 70px;
+        width: 480px;
+        margin-left: 20px;
+        /*margin-right: 390px;*/
+        line-height: 50px;
+    }
+    .black-background {
+        height: 1280px;
+    }
+    .calling {
+        width: 318px;
+        height: 254px;
+        /*transform: scale(0.8);*/
+    }
+    .zoom-container {
+        max-height: 100%;
+        width: 100%;
+        overflow: hidden;
+        /*border: 2px solid green;*/
 
+        margin-top: 0px;
+    }
+    .girl-at-supermarket {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .zoom-container img {
+        height: 100%;
+        width: 100%;
+    }
+    .we-wake, .we-wake2 {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+        width: 340px;
+        margin-left: 20px;
+    }
+    .img2 {
+        margin-top: 30px;
+        transform: translateY(220px);
+    }
+    .we-wake {
+        margin-top: 70px;
+        transform: translateY(0px);
+    }
+    .we-wake2 {
+        margin-top: 390px;
+    }
+
+}
 </style>

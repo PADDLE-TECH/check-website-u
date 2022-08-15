@@ -71,7 +71,10 @@ nav {
     margin-left: 81px;
     margin-right: 81px;
     border-radius: 50px;
+
+
 }
+
 .navbar {
     /*border: 1px solid red;*/
     padding: 60px 30px 60px 30px;
@@ -203,7 +206,7 @@ button img {
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     ul {
         text-align: left;
         transform: translateX(0px);

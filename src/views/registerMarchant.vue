@@ -33,7 +33,7 @@
 
     <div class="row row2register">
 
-        <aos-vue animation="" class="col-md-6">
+        <aos-vue animation="" class="col-md-6 col-sm-12">
             <aos-vue animation="fade-right">
                 <img src="../assets/images/Vector-34.png" class="table">
             </aos-vue>
@@ -43,7 +43,7 @@
 
 
 
-        <aos-vue animation="fade-left" class="col-md-6">
+        <aos-vue animation="fade-left" class="col-md-6 col-sm-12">
             <div class="number1">
                 <img src="../assets/pic1/pic2/01.png" class="num1"><br>
                 <p class="restaurant-class">Restaurant</p>
@@ -212,7 +212,7 @@ export default {
     text-align: left;
 }
 .how-we-built {
-    font-family: 'poppins';
+    /*font-family: 'poppins';
     text-align: center;
     font-style: normal;
     font-weight: 500;
@@ -220,9 +220,22 @@ export default {
     line-height: 30px;
     text-align: left;
     margin-top: 91px;
-    color: black;
+    color: black;*/
 
-    margin-left: 90px;
+    /*margin-left: 90px;*/
+    font-family: 'poppins';
+    /*text-align: center;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    width: 561px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-44%);
+    margin-top: 91px;
+    color: black;
 }
 .our-expert {
     font-family: 'poppins';

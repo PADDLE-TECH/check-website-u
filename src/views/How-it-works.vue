@@ -119,7 +119,7 @@
         <aos-vue animation="fade-up">
             <div class="row forth-row flex-column-reverse flex-md-row">
                 <div class="col-md-4"><img src="../assets/images2/rotoititit-1.png" class="phone"></div>
-                <div class="col-md-8">
+                <div class="col-md-8 check-list">
                     <h2><b>Check Retail helps thousands of smart people like you.</b></h2>
                     <ul class="list1 slide-in-delay1">
                         <li><img src="../assets/images2/check-4-7.png" class="rec" >Save valuable time up to 50%</li><br>
@@ -747,7 +747,7 @@ li img {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 425px) {
     /*.home {
         overflow-x: hidden;
         position: relative;
@@ -1078,8 +1078,286 @@ li img {
         line-height: 40px;
         width: 320px;
     }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    .convinience {
+        font-size: 50px;
+        width: 300px;
+        line-height: 60px;
+        padding: 0%;
+
+        margin: auto;
+        margin-right: 210px;
+        /*border: 1px solid red;*/
+        /*word-break: break-all;*/
+        margin-left: 20px;
+        margin-top: -60px;
+    }
+    ul {
+        margin: auto;
+        margin-top: 50px;
+        /*border: 1px solid red;*/
+        width: 380px;
+        margin-left: 20px;
+
+    }
+    li {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        width: 290px;
+        /*padding-right: -35px;*/
+        padding-left: 0;
+
+    }
+    li:nth-child(5){
+        margin-right: 100px;
+    }
+    /*.checkimg {
+        transform: translateX(0px);
+        margin-left: -20px;
+    }
+    li span {
+        position: absolute;
+        transform: translateX(20px);
+        width: 290px;
+    }
+    .convinience ul li {
+        position: relative;
+        padding-top: 80px;
+        border: 1px solid;
+    }*/
+    table {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    td {
+        text-align: left;
+        font-size: 18px;
+        line-height: 20px;
+        padding-right: 10px;
+        font-family: 'Euclid Circular A';
+        padding-bottom: 15px;
+    }
+
+    .stores {
+        padding: 0px;
+        transform: scale(0.8) translateX(-13px);
+        margin-top: 0px;
+    }
+    .store1 {
+        transform: scale(0.75) translateX(20px);
+        margin-right: 0px;
+
+    }
+    .store2 {
+        transform: scale(0.75) translateX(-20px);
+        margin-left: 0px;
+    }
+    .play-video, .watch-video  {
+        display: none;
+    }
+    .dark-background {
+        margin-top: -50px;
+        height: 840px;
+    }
+    .dark-background h2 {
+        font-size: 50px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .dark-background iframe {
+        /*top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-top: 280px;
 
 
+        transform: scale(1) translate(0px, -250px);
+
+        height: auto;*/
+
+        margin-left:-40px;
+    }
+    .iframe-box {
+        /*position: relative;*/
+        width: 100%;
+        padding-bottom: 56.24%;
+        /*height: 0;*/
+    }
+    .dark-background h3 {
+        margin-left: 20px;
+        width: 520px;
+        margin-top: -300px;
+        transform: translateY(0px);
+    }
+    .dark-background button {
+        left: 20px;
+    }
+
+    .watch-video-mobile {
+        display: inline-block;
+
+    }
+
+    .first-row {
+        margin-top: 112px;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .bar {
+        transform: translateY(35px);
+    }
+    .appleStore {
+        transform: scale(0.18) translate(-1890px, -450px);
+    }
+    .playStore {
+        transform: scale(0.18) translate(-950px, -1830px);
+    }
+    .img1 {
+        /*width: 437px;
+        height: 400px;*/
+        transform: scale(0.55) translateX(-20px);   /*translate(-455px, -900px) */
+        margin: auto;
+        margin-top: -200px;
+        /*margin-right:-90px;*/
+        text-align: center;
+    }
+
+
+    .color-gradient {
+        margin-left: 0px;
+        width: 350px;
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: -80px;
+    }
+    .second-youtube-row {
+        margin-top: 60px;
+    }
+    .second-stores {
+        margin-left: 0px;
+    }
+    .col-xs-12 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .img-container {
+        text-align: center;
+        margin-left: -75px;
+        transform: scale(0.6);
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+    }
+    .column-2 {
+        margin-left: 20px;
+        margin-top: -250px;
+    }
+    .column-2 h2 {
+        font-size: 50px;
+        line-height: 50px;
+        width: 520px;
+    }
+    .column-2 h3 {
+        font-size: 30px;
+        width: 520px;
+    }
+    .column-2 h4 {
+        width: 520px;
+    }
+
+    .second-row {
+        padding-bottom: 100px;
+    }
+    .second-row h2 {
+        /*font-size: 40px;*/
+        line-height: 50px;
+    }
+    .green-row {
+        height: 1000px;
+        margin-top: 0px;
+    }
+    .green-row h2 {
+        font-size: 50px;
+        margin-left: 20px;
+        width: 350px;
+        margin-top: 40px;
+    }
+    .green-row h4 {
+        margin-left: 20px;
+        width: 330px;
+    }
+    .green-row img {
+        animation: none;
+        transform: scale(0.7) translateX(-410px);
+        margin-top: 20px;
+    }
+    .check-list {
+        transform: translateX(100px);
+    }
+    .forth-row {
+        /*margin-left: -100px;*/
+        margin-top: 100px;
+    }
+    .forth-row h2 {
+        font-size: 40px;
+        line-height: 50px;
+        width: 330px;
+        margin-left: 20px;
+    }
+    .forth-row ul {
+        margin-left: 0px;
+    }
+    .forth-row li {
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 27px;
+        width: 315px;
+    }
+    .forth-row img {
+        /*display: none;*/
+        transform: scale(0.6);
+        margin-left: -40px;
+    }
+    .forth-row button {
+        margin-top: 10px;
+    }
+    .forth-row .phone {
+        transform: scale(0.7);
+        margin-left: -190px;
+    }
+
+    .fifth-row {
+        margin-top: -150px;
+        margin-left: 20px;
+        margin-bottom: 200px;
+        margin-right: 10px;
+    }
+    .fifth-row h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .fifth-row h4 {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+        width: 620px;
+    }
 }
 
 

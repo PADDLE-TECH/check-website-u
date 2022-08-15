@@ -85,7 +85,7 @@
     /*display: block;*/
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .row {
         margin-top: 0px;
         height: 422px;
