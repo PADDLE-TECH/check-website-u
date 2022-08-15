@@ -624,6 +624,7 @@ section p {
     font-size: 14px;
     line-height: 24px;
     color: #888580;
+    transition: all 0.4s ease;
 }
 section button {
     border: 1px solid #FF9F24;
@@ -698,7 +699,10 @@ table td {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 800px) {
+
+
+
+@media screen and (max-width: 425px) {
     .policy {
         overflow-x: hidden;
         /*padding: 20px;*/
@@ -736,6 +740,65 @@ table td {
     }
     section h2 {
         width: 250px;
+        display: inline-block;
+    }
+    .arrow-mobile {
+        height: 16px;
+        width: 16px;
+        /*float: right;*/
+        margin-right: 3px;
+        position: absolute;
+        right: 10px;
+        display: inline-block;
+        /*transform:translateY(3px);*/
+        margin-top: 5px;
+    }
+    .arrow {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .policy {
+        overflow-x: hidden;
+        /*padding: 20px;*/
+    }
+    /*.container {
+        padding: 20px;
+    }*/
+    .superHeader h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 30px;
+    }
+    .box {
+        margin-left: 0px;
+        width: auto;
+        height: 400px;
+    }
+    .box h3 {
+        display: inline-block;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+    section {
+        padding: 16px;
+        text-align: left;
+        border-radius: 12px;
+        margin-left: 0px;
+        width: auto;
+        /*width: 200px;*/
+        transition: all 0.4s ease;
+        position: relative;
+        /*margin-top: 24px;*/
+    }
+    section h2 {
+        width: 400px;
         display: inline-block;
     }
     .arrow-mobile {

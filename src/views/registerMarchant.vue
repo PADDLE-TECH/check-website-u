@@ -803,7 +803,7 @@ button:hover {
         margin-left: 0px;
     }
     .number1 {
-        margin-top: -120px;
+        margin-top: -500px;
     }
     .restaurant-class {
         margin-left: 30px;

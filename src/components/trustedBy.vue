@@ -154,7 +154,7 @@ ul {
     }
 
     td{
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         padding: 20px;
     }
     td img {
