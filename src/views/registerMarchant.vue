@@ -755,7 +755,10 @@ button:hover {
         text-align: left;
         margin-left: 20px;
         width: 350px;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
+
+        left: 0%;
+        transform: translateX(0%);
     }
     .our-expert {
         text-align: left;
