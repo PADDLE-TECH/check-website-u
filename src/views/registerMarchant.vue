@@ -17,7 +17,7 @@
 
                 <div class="col-md-6">
                     <div class="modal-content fade-up" id="form1">
-                        <form action="https://formsubmit.co/hello.paddle@gmail.com" method="POST">
+                        <form action="https://formsubmit.co/merchant@checkretail.tech" method="POST">
                             <!--<h2 @click="form1 = !form1">+</h2>-->
                             <h1>Drop your details, we will surely reach back!</h1>
                             <input type="email" name="Email" placeholder="Email" class="email-input" required><br>

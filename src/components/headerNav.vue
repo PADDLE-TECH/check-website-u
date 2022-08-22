@@ -180,6 +180,7 @@ button img {
     padding: 0%;
     top: 0%;
 
+
 }
 .menu-bar {
     width: 100%;
@@ -215,6 +216,8 @@ button img {
         margin: 0;
         transform: translateY(0px);
         border-radius: 0%;
+
+
     }
     nav img {
         height: 40px;
