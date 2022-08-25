@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 ">
                 <div class="img1-div col-xs-12 ">
-                    <img src="../assets/images/Vector-31.png" class="img1 slide-from-right">
+                    <img src="../assets/images/Vector-31-ii.webp" class="img1 slide-from-right">
                 </div>
             </div>
 

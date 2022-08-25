@@ -2,7 +2,7 @@
 
     <div class="container-fluid">
         <div class="row qrSection">
-            <aos-vue animation="fade-right" class="col-md-7 col-sm-4"><img src="../assets/images/woman.png" class="woman"></aos-vue>
+            <aos-vue animation="fade-right" class="col-md-7 col-sm-4"><img src="../assets/images/woman-ii.webp" class="woman"></aos-vue>
             <div class="col-md-5 col-sm-8">
                 <h1 class="QR"><b>A QR technology enhanced future</b></h1>
                 <p class="you-are">You are  here because the future matters. We  thought  of what you need and expressed it in this beautiful piece of technology.</p>

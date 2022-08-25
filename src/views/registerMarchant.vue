@@ -21,7 +21,7 @@
                             <!--<h2 @click="form1 = !form1">+</h2>-->
                             <h1>Drop your details, we will surely reach back!</h1>
                             <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
-                            <input type="tel" name="Phone-number" placeholder="Phone number eg: 08180334573"  required><br>
+                            <input type="tel" name="Phone-number" placeholder="Phone number eg: 081*******3"  required><br>
                             <input type="text" name="Company-name" placeholder="Company name" required><br>
                             <input type="submit" value="Contact me!" class="submit-btn">
                         </form>
@@ -35,9 +35,9 @@
 
         <aos-vue animation="" class="col-md-6 col-sm-12">
             <aos-vue animation="fade-right">
-                <img src="../assets/images/Vector-34.png" class="table">
+                <img src="../assets/images/Vector-34-ii.webp" class="table">
             </aos-vue>
-            <img src="../assets/images/Vector-34.png" class="table2">
+            <img src="../assets/images/Vector-34-ii.webp" class="table2">
 
         </aos-vue>
 
@@ -116,7 +116,7 @@
 
         <aos-vue animation="fade-left" class="col-md-6">
             <aos-vue animation="fade-in">
-                <img src="../assets/images/Vector-33.png" class="woman-with-phone-pic">
+                <img src="../assets/images/Vector-33-ii.webp" class="woman-with-phone-pic">
             </aos-vue>
         </aos-vue>
     </div>

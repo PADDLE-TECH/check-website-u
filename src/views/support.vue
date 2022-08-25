@@ -45,8 +45,8 @@
             </div>
             <div class="col-md-7 support-column">
                 <div class="support-container">
-                    <img src="../assets/images2/support5.jpg" class="desktop-img">
-                    <img src="../assets/images2/support5.2.jpg" class="mobile-img">
+                    <img src="../assets/images2/support5-ii.webp" class="desktop-img">
+                    <img src="../assets/images2/support5.2-ii.webp" class="mobile-img">
                     <!--<div class="superHeader-mobile"><b>Contact Us</b></div>-->
                 </div>
             </div>

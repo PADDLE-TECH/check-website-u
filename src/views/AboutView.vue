@@ -7,22 +7,22 @@
         <div class="row">
             <div class="col-md-10">
                 <div >
-                        <img src="../assets/images/p-2.png" class="green-circle slide-from-up">
+                        <img src="../assets/images/p-2-ii.webp" class="green-circle slide-from-up">
                         <img src="../assets/images/idea-img.png" class="bulb">
                     </div>
                     <div class="top">
                         <h3 class="we-are-a-company slide-from-up">We are a company of young, smart Africans disrupting the retail ecosystem.</h3>
 
-                        <img src="../assets/images/r-img-1.png" class="yellow-woman slide-in">
+                        <img src="../assets/images/r-img-1-ii.webp" class="yellow-woman slide-in">
 
                         <h3 class="people">People spend alot of time to make money, they shouldn’t take time to spend it.</h3>
-                        <img src="../assets/images/p-1.png" class="peach-circle">
+                        <img src="../assets/images/p-1-ii.webp" class="peach-circle">
                     </div>
             </div>
             <div class="col-md-2">
-                <img src="../assets/images/r-img-3.png" class="purple-guy slide-from-right">
-                <img src="../assets/images/r-img-4.png" class="lady slide-from-right-slow1">
-                <img src="../assets/images/r-img-2.png" class="man">
+                <img src="../assets/images/r-img-3-ii.webp" class="purple-guy slide-from-right">
+                <img src="../assets/images/r-img-4-ii.webp" class="lady slide-from-right-slow1">
+                <img src="../assets/images/r-img-2-ii.webp" class="man">
             </div>
         </div>
 
@@ -36,17 +36,17 @@
 
             <div class="row">
                 <div class="col-B1 col-md-6">
-                    <aos-vue animation="fade-right"><img src="../assets/images/banner-1.png" class="calling img1"></aos-vue>
-                    <aos-vue animation="fade-right"><img src="../assets/images/man.png" class="calling img2"></aos-vue>
+                    <div animation="fade-right"><img src="../assets/images/banner-1-ii.webp" class="calling img1"></div>
+                    <div animation="fade-right"><img src="../assets/images/man-ii.webp" class="calling img2"></div>
                 </div>
                 <div class="col-B2 col-md-6">
-                    <aos-vue animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinking of how to solve everyday problems in the retail space.</h3></aos-vue>
-                        <aos-vue animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your shopping & transactions? Well, Check-Retail is obsessed about making things work for you and our business!</h3></aos-vue>
+                    <div animation="fade-left"><h3 class="we-wake">We wake up every day to one course, thinking of how to solve everyday problems in the retail space.</h3></div>
+                        <div animation="fade-left"><h3 class="we-wake2">Desiring absolute control of your shopping & transactions? Well, Check-Retail is obsessed about making things work for you and our business!</h3></div>
                 </div>
             </div>
         </div>
         <!--<aos-vue animation="zoom-in"><img src="../assets/images/Vector-32.png" class="girl-at-supermarket"></aos-vue>-->
-        <div class="zoom-container"><div class="girl-at-supermarket"><img src="../assets/images/Vector-32.png"></div></div>
+        <div class="zoom-container"><div class="girl-at-supermarket"><img src="../assets/images/Vector-32-ii.webp"></div></div>
     </div>
 
 
@@ -221,7 +221,8 @@ export default {
 .calling {
     width: 488px;
     height: 394px;
-    margin-top: 68px
+    margin-top: 68px;
+    clip-path: polygon(17% 0, 100% 1%, 100% 100%, 0 100%, 0 25%);
 }
 .we-wake {
     font-family: 'poppins';

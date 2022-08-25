@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-5 col-sm-12 col-xs-12 ">
                 <div class="img1-div col-xs-12 ">
-                    <img src="../assets/images2/Check_photo1-1.png" class="img1 slide-from-right">
+                    <img src="../assets/images2/Check_photo1-1-ii.webp" class="img1 slide-from-right">
                 </div>
             </div>
         </div>
