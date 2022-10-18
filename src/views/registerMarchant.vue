@@ -6,7 +6,7 @@
 
     <div class="container-fluid">
         <div class="grid-contain-1 row flex-column-reverse flex-md-row">
-                <div class="first-container col-md-6">
+                <div class="first-container col-md-12">
 
                     <h3 class="we-are-obsessed slide-in">We are obsessed about making things work for you and your business!</h3>
                     <h3 class="how-we-built slide-in-delay">How we built the solution that works for you</h3>
@@ -15,10 +15,9 @@
                     The QR code technology is a faster way to send and receive data which eliminates every form of failure and disconnection in your transactions. </h3>
                 </div>
 
-                <div class="col-md-6">
+                <!--<div class="col-md-6">
                     <div class="modal-content fade-up" id="form1">
-                        <form action="https://formsubmit.co/merchant@checkretail.tech" method="POST">
-                            <!--<h2 @click="form1 = !form1">+</h2>-->
+                        <form action="https://formsubmit.co/checkretailer@gmail.com" method="POST">
                             <h1>Drop your details, we will surely reach back!</h1>
                             <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
                             <input type="tel" name="Phone-number" placeholder="Phone number eg: 081*******3"  required><br>
@@ -26,10 +25,98 @@
                             <input type="submit" value="Contact me!" class="submit-btn">
                         </form>
                     </div>
-                </div>
+                </div>-->
 
         </div>
+
+        <div  class="row" id="form-row">
+        <form class="form-details" action="https://formsubmit.co/akinboladesalako@gmail.com" method="POST">
+            <h1>Drop your details, we will surely reach back!</h1>
+            <div v-if="step1" class="step-1">
+                <h3>(1/3)</h3>
+                <h4>Branch Manager's information</h4>
+                <ul>
+                    <li><input type="text" name="FirstName" v-model="firstName" placeholder="First Name*" class="short" required></li>
+                    <li><input type="text" name="LastName" v-model="lastNmae" placeholder="Last Name*" class="short" required></li>
+                </ul>
+
+                <ul>
+                    <li class="long"><input type="email" v-model="companyName" name="CompanyEmail" placeholder="Email Address*" class="long" required></li>
+                </ul>
+
+
+                <ul>
+                    <li><input type="tel" name="Phone-number" v-model="phoneNumber" placeholder="Phone Number*" class="short"  required></li>
+                    <li><input type="tel" name="Phone-number" v-model="alternativeNumber" placeholder="Alternative Phone Number" class="short"  required></li>
+                </ul>
+                <button @click="switchToStep2()">Next</button>
+            </div>
+
+            <div v-if="step2" class="step-2">
+                <img @click="backToStep1()" src="../assets/icons/arrow-right.svg"><br>
+                <h3>(2/3)</h3>
+                <h4>Company information</h4>
+                <ul>
+                    <li><input type="email" name="Email" v-model="companyName" placeholder="Company's Name*" class="short" required></li>
+                    <li><input type="email" name="Email" v-model="registeredName" placeholder="Registered Name*" class="short" required></li>
+                </ul>
+                <ul>
+                    <li><input type="text" name="CAC Number" v-model="cacNumber" placeholder="CAC Number*" class="mini" required></li>
+                    <li><input type="text" name="Category" v-model="location" placeholder="Location*" class="mini" required></li>
+                    <li>
+                        <select v-model="category" required>
+                            <option value="" disabled selected>Category</option>
+                            <option value="Resturant">Restaurant</option>
+                            <option value="Supermarket">Supermarket</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="long"><input type="text" v-model="address" name="Address" placeholder="Address*" required></li>
+                </ul>
+                <ul>
+                    <li><input type="text" name="Company Email" v-model="companyEmail" placeholder="Company E-Mail*" class="mini" required></li>
+                    <li><input type="text" name="Company Phone Number" v-model="companyPhone" placeholder="Company Phone Number*" class="mini" required></li>
+                    <li><input type="text" name="Company Alternative" v-model="companyAlternativePhone" placeholder="Company Alternative Phone Number" class="mini" required></li>
+                </ul>
+                <button @click="switchToStep3()">Next</button>
+            </div>
+
+            <div v-show="step3" class="step-3">
+                <input name="First_Name" :value="firstName" style="display: none">
+                <input name="Last_Name" :value="lastName" style="display: none">
+                <input name="Email Address" :value="email" style="display: none">
+                <input name="Phone_number" :value="phoneNumber" style="display: none">
+                <input name="Alternative_number" :value="alternativeNumber" style="display: none">
+                <input name="Company_Name" :value="companyName" style="display: none">
+                <input name="Registered_Name" :value="registeredName" style="display: none">
+                <input name="CAC_Number" :value="cacNumber" style="display: none">
+                <input name="Category" :value="category" style="display: none">
+                <input name="Location" :value="location" style="display: none">
+                <input name="Address" :value="address" style="display: none">
+                <input name="Company_Email" :value="companyEmail" style="display: none">
+                <input name="Company_phone_NUmber" :value="companyPhone" style="display: none">
+                <input name="Company_alternative_phone" :value="companyAlternativePhone" style="display: none">
+
+
+                <img @click="backToStep2()" src="../assets/icons/arrow-right.svg"><br>
+                <h3>(3/3)</h3>
+                <h4>Branch information</h4>
+                <ul>
+                    <li><input type="text" name="No_of_tables" placeholder="Number of Tables*" class="mini"></li>
+                </ul>
+
+                <ul>
+                    <li><input type="text" name="Bank Name" placeholder="Bank name*" class="mini" required></li>
+                    <li><input type="text" name="Account Name" placeholder="Account Name*" class="mini" required></li>
+                    <li><input type="text" name="AccountNumber" placeholder="Account Number*" required></li>
+                </ul>
+                <input type="submit" value="Register" class="submit-btn">
+            </div>
+
+        </form>
     </div>
+
 
     <div class="row row2register">
 
@@ -47,12 +134,6 @@
             <div class="number1">
                 <img src="../assets/pic1/pic2/01.png" class="num1"><br>
                 <p class="restaurant-class">Restaurant</p>
-                <!--<div class="restaurant-block">
-                    <img src="../assets/pic1/pic2/Rectangle-64.png" class="restaurant-box">
-                    <img src="../assets/pic1/pic2/Restaurant.png" class="restaurant">
-                </div>-->
-
-
                 <h3 class="trying-to">Trying to sell to tens of customers at the same time is tiring, Our app will save you!</h3>
                 <h3 class="you-are-here">You are here because the future matters. We  thought  of what you need and expressed it in this beautiful piece of technology.</h3><br><br>
 
@@ -70,33 +151,12 @@
     </div>
 
 
-    <!--<transition name="form" mode="out-in" appear>
-        <div class="modal-row" id="form1" v-show="form1">
-            <div class="modal-content">
-                <form action="https://formsubmit.co/hello.paddle@gmail.com" method="POST">
-                    <h2 @click="form1 = !form1">+</h2>
-                    <h1>Drop your details, we will surely reach back!</h1>
-                    <input type="email" name="Email" placeholder="Email" class="email-input" required><br>
-                    <input type="number" name="Phone-number" placeholder="Phone number eg: 08180334573" required><br>
-                    <input type="text" name="Company-name" placeholder="Company name" required><br>
-                    <input type="submit" value="Contact me!" class="submit-btn">
-                </form>
-            </div>
-        </div>
-    </transition>-->
-
-
     <div class="row row2register">
         <!--<>-->
             <aos-vue animation="fade-right" class="col-md-6">
             <div class="number2">
                 <img src="../assets/pic1/pic2/02.png" class="num1"><br>
                 <p class="supermarket-class">Supermarket</p>
-                <!--<div class="supermarket-block">
-                    <img src="../assets/pic1/pic2/Rectangle-69.png" class="restaurant-box">
-                    <img src="../assets/pic1/pic2/Supermarket.png" class="restaurant ">
-                </div>-->
-
 
                 <h3 class="trying-to">Trying to sell to tens of customers at the same time is tiring, Check will save you!</h3>
                 <h3 class="you-are-here">You are here because the future matters. We  thought  of what you need and expressed it in this beautiful piece of technology.</h3><br><br>
@@ -128,6 +188,7 @@
     <oneApp></oneApp>
     <trustedBy></trustedBy>
     <footerLinks></footerLinks>
+    </div>
   </div>
 </template>
 
@@ -149,7 +210,45 @@ export default {
   data() {
     return {
         form1: false,
-        form2: false
+        form2: false,
+        step1: true,
+        step2: false,
+        step3: false,
+
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        alternativeNumber: "",
+        companyName: "",
+        registeredName: "",
+        cacNumber: "",
+        category: "",
+        location: "",
+        address: "",
+        companyEmail: "",
+        companyPhone: "",
+        companyAlternativePhone: ""
+    }
+  },
+  methods: {
+    switchToStep2 () {
+        this.step2 = true,
+        this.step1 = false
+        //this.step2 = true
+        //this.step3 = false
+    },
+    switchToStep3 () {
+        this.step2 = false,
+        this.step3 = true
+    },
+    backToStep1() {
+        this.step2 = false,
+        this.step1 = true
+    },
+    backToStep2() {
+        this.step2 = true,
+        this.step3 = false
     }
   }
 }
@@ -438,7 +537,86 @@ button:hover {
     transition: all 0.4s ease;
     opacity: 0.9;
 }
-
+.form-details {
+    /*border: 2px solid red;*/
+    padding: 10%;
+    /*text-align: left;*/
+}
+.form-details h1 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+}
+.form-details  h3 {
+    text-align: left;
+    color: #E68900;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.form-details img {
+    text-align: left;
+    float: left;
+}
+.form-details h4 {
+    text-align: left;
+    color: #E68900;
+}
+.form-details ul {
+    margin-left: 0px;
+    /*border: 3px solid purple;*/
+    display: flex;
+    justify-content: space-between;
+}
+.form-details ul li {
+    display: inline-block;
+    /*border: 1px solid green;*/
+    /*margin-bottom: -25px;*/
+    list-style: none;
+}
+.form-details input, .form-details select {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #3E3E3E;
+    padding-left: 16px;
+}
+.form-details .short {
+    width: 512px;
+}
+.form-details .long {
+    width: 100%;
+    display: grid;
+}
+.form-details .mini {
+    width: 342px;
+}
+.form-details button {
+    width: 100%;
+    margin-top: 60px;
+    background: #D50000;
+}
+.form-details input[type='submit'] {
+    width: 100%;
+    margin-top: 60px;
+    background: #D50000;
+    height: 77px;
+    color: #fff;
+    border: none;
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+.form-details input[type='submit']:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
 
 @keyframes slide-in {
     from {
@@ -512,95 +690,6 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
-/*.modal-content {
-    position: absolute;
-    width: 759px;
-    height: 970px;
-    top: 223px;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-    padding: 77px;
-    text-align: left;
-}
-.modal-content h2 {
-    float: right;
-    transform: rotate(45deg);
-    margin-top: -55px;
-    margin-right: -22px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: #464646;
-    cursor: pointer;
-}
-.modal-content h1 {
-    font-family: 'Euclid Circular A';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.05em;
-
-    color: #464646;
-    width: 514px;
-}
-.modal-content input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-bottom: 0.5px solid #000000;
-    padding: 85px 0px 16px px;
-    margin-bottom: 49px;
-    padding-bottom: 30px;
-
-    font-family: 'Euclid Circular A';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 70px;
-    letter-spacing: -0.05em;
-
-    color: #464646;
-    transition: all 0.4s ease;
-}
-.modal-content .email-input {
-    margin-top: 40px;
-}
-.modal-content .submit-btn {
-    color: rgb(255, 255, 255);
-    background: #EB001B;
-    padding: 0px;
-    margin-top: 83px;
-    height: 85px;
-    border-radius: 10px;
-    border: none;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 70px;
-
-
-    align-items: center;
-    letter-spacing: -0.05em;
-
-}
-.modal-content input:focus {
-   border: none;
-   border: 2px solid #EB001B;
-   outline: none;
-   border-radius: 8px;
-   padding: 10px;
-   transform: scale(1.02);
-   height: 60px;
-   transition: all 0.4s ease;
-}*/
-
-
 
 
 .modal-content {
@@ -781,6 +870,30 @@ button:hover {
         height: 463px;
         display: none;
     }
+    #form-row {
+        transform: translateY(-500px);
+    }
+    .form-details {
+        padding: 0%;
+        text-align: center;
+    }
+    .form-details ul {
+        display: block;
+        text-align: center;
+    }
+    .form-details ul li {
+        display: block;
+    }
+    .form-details .short {
+        width: 100%;
+    }
+    .form-details .long {
+        width: 100%;
+        display: grid;
+    }
+    .form-details .mini {
+        width: 100%;
+    }
     .table2 {
         display: inline-block;
        margin-left: 0px;
@@ -814,15 +927,7 @@ button:hover {
     .supermarket-class {
         margin-left: 30px;
     }
-    /*.restaurant-box {
-        transform: translateY(20px) translateX(-90px);
-    }
-    .restaurant-block {
-        transform: translateX(60px);
-    }
-    .supermarket-block {
-        transform: translateX(75px);
-    }*/
+
     .trying-to {
         font-size: 45px;
         line-height: 50px;
