@@ -74,6 +74,20 @@
               </div>
 
               <div v-show="step3" class="step-3">
+                <input name="First_Name" :value="firstName" style="display: none">
+                <input name="Last_Name" :value="lastName" style="display: none">
+                <input name="Email Address" :value="email" style="display: none">
+                <input name="Phone_number" :value="phoneNumber" style="display: none">
+                <input name="Alternative_number" :value="alternativeNumber" style="display: none">
+                <input name="Company_Name" :value="companyName" style="display: none">
+                <input name="Registered_Name" :value="registeredName" style="display: none">
+                <input name="CAC_Number" :value="cacNumber" style="display: none">
+                <input name="Category" :value="category" style="display: none">
+                <input name="Location" :value="location" style="display: none">
+                <input name="Address" :value="address" style="display: none">
+                <input name="Company_Email" :value="companyEmail" style="display: none">
+                <input name="Company_phone_NUmber" :value="companyPhone" style="display: none">
+                <input name="Company_alternative_phone" :value="companyAlternativePhone" style="display: none">
                   <ul>
                       <li><input type="text" placeholder="Number of Tables"></li>
                   </ul>
