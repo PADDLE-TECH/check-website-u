@@ -30,7 +30,7 @@
         </div>
 
         <div  class="row" id="form-row">
-        <form class="form-details" action="https://formsubmit.co/akinboladesalako@gmail.com" method="POST">
+        <form class="form-details" action="https://formsubmit.co/checkretailer@gmail.com" method="POST">
             <h1>Drop your details, we will surely reach back!</h1>
             <div v-if="step1" class="step-1">
                 <h3>(1/3)</h3>
