@@ -42,11 +42,11 @@
                     </div>
                     <div class="col-md-4">
                         <label>Phone Number*</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="phoneNumber">
+                        <input type="number" placeholder="E.g 08130405070" v-model="phoneNumber">
                     </div>
                     <div class="col-md-4">
                         <label>Alternative Number (Optional)</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="alternativeNumber">
+                        <input type="number" placeholder="E.g 08130405070" v-model="alternativeNumber">
                     </div>
                 </div>
                 <div class="row nav-buttons">
@@ -68,8 +68,8 @@
                         <input type="text" placeholder="Enter parent company name" v-model="registeredName">
                     </div>
                     <div class="col-md-4">
-                        <label>CAC Number*</label><br>
-                        <input type="number" placeholder="E.g 1430035050" v-model="cacNumber">
+                        <label>CAC Number</label><br>
+                        <input type="text" placeholder="E.g RC14300" v-model="cacNumber">
                     </div>
                 </div>
                 <div class="row">
@@ -97,11 +97,11 @@
                     </div>
                     <div class="col-md-4">
                         <label>Phone Number*</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="companyPhone">
+                        <input type="number" placeholder="E.g 08130405070" v-model="companyPhone">
                     </div>
                     <div class="col-md-4">
                         <label>Alternative Number (Optional)</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="companyAlternativePhone">
+                        <input type="number" placeholder="E.g 08130405070" v-model="companyAlternativePhone">
                     </div>
                 </div>
                 <div class="row nav-buttons">
@@ -116,7 +116,7 @@
                 <input name="First_Name" :value="firstName" style="display: none">
                 <input name="Last_Name" :value="lastName" style="display: none">
                 <input name="Gender" :value="gender" style="display: none">
-                <input name="Email Address" :value="email" style="display: none">
+                <input name="Email_Address" :value="email" style="display: none">
                 <input name="Phone_number" :value="phoneNumber" style="display: none">
                 <input name="Alternative_number" :value="alternativeNumber" style="display: none">
                 <input name="Company_Name" :value="companyName" style="display: none">
@@ -126,7 +126,7 @@
                 <input name="Location" :value="location" style="display: none">
                 <input name="Address" :value="address" style="display: none">
                 <input name="Company_Email" :value="companyEmail" style="display: none">
-                <input name="Company_phone_NUmber" :value="companyPhone" style="display: none">
+                <input name="Company_phone_Number" :value="companyPhone" style="display: none">
                 <input name="Company_alternative_phone" :value="companyAlternativePhone" style="display: none">
                 <div class="row">
                     <div class="col-md-4">
@@ -464,6 +464,9 @@ export default {
     display: inline-block;
     cursor: pointer;
 }
+.nav h2:nth-child(1) {
+    margin-left: -15px;
+}
 .active {
     color: #000000;
 }
@@ -511,6 +514,7 @@ input[type='submit'] {
     background: #D40100;
     color: #fff;
     height: 58px;
+    transform: translateY(6px);
 }
 .nav-buttons ul{
     /*display: flex;
@@ -973,14 +977,17 @@ button:hover {
         display: inline-block;
         list-style: none;
         text-align: center;
-        background: #BABABA;
+        /*background: #BABABA;*/
         width: 130px;
         /*height: 44px;*/
         padding-top: 15.2px;
         padding-bottom: 15.2px;
         border-radius: 4px;
-        color: #fff;
+        /*color: #fff;*/
         cursor: pointer;
+    }
+    .nav h2:nth-child(1) {
+        margin-left: 0px;
     }
 
     .table {
