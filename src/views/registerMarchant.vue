@@ -1,10 +1,164 @@
 <template>
   <div class="register">
-    <div class="color"></div>
+    <!--<div class="color"></div>-->
     <!--<h1>This is an about page</h1>-->
     <appHeader></appHeader>
 
     <div class="container-fluid">
+        <form class="row form-submit" action="https://formsubmit.co/checkretailer@gmail.com" method="POST">
+            <div class="form-border">
+            <div class="nav">
+                <div class="col-md-4 nav1"><h2 @click="backToStep1()" :class="step1 ? 'active' : 'not-active'">Branch Manager’s Information <h4 style="display:inline-block;font-size: 14px;"> (1of3)</h4></h2></div>
+                <div class="col-md-4 nav2"><h2  @click="switchToStep2()" :class="step2 ? 'active' : 'not-active'">Company Information <h4 style="display:inline-block;font-size: 14px;"> (2of3)</h4></h2></div>
+                <div class="col-md-4 nav3"><h2  @click="switchToStep3 ()" :class="step3 ? 'active' : 'not-active'">Branch Information <h4 style="display:inline-block;font-size: 14px;"> (3of3)</h4></h2></div>
+                <div class="progress-path">
+                    <div class="progress-bar" :style="step1 ? 'width:33%' : step2 ? 'width:66%' : 'width:100%' "></div>
+                </div>
+            </div>
+
+            <div v-show="step1" class="step-1 step">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>First Name*</label><br>
+                        <input type="text" placeholder="Enter manager’s first name" v-model="firstName">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Surname*</label><br>
+                        <input type="text" placeholder="Enter manager’s surname" v-model="lastName">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Gender*</label><br>
+                        <select v-model="gender" required>
+                            <option value="" disabled selected>Click to select a gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>E-mail Address*</label><br>
+                        <input type="email" placeholder="example@gmail.com" v-model="email">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Phone Number*</label><br>
+                        <input type="tel" placeholder="E.g 08130405070" v-model="phoneNumber">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Alternative Number (Optional)</label><br>
+                        <input type="tel" placeholder="E.g 08130405070" v-model="alternativeNumber">
+                    </div>
+                </div>
+                <div class="row nav-buttons">
+                    <ul>
+                        <li style="display:none">Back</li>
+                        <li style="background: #D40100;" @click="switchToStep2 ()" class="btn">Continue</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div v-show="step2" class="step-2 step">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Company Name*</label><br>
+                        <input type="text" placeholder="Enter company name" v-model="companyName">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Registered Name* </label><br>
+                        <input type="text" placeholder="Enter parent company name" v-model="registeredName">
+                    </div>
+                    <div class="col-md-4">
+                        <label>CAC Number*</label><br>
+                        <input type="number" placeholder="E.g 1430035050" v-model="cacNumber">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Category*</label><br>
+                        <select v-model="category" required>
+                            <option value="" disabled selected>Category</option>
+                            <option value="Restaurant">Restaurant</option>
+                            <option value="Supermarket">Supermarket</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Location*</label><br>
+                        <input type="text" placeholder="Enter location" v-model="location">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Address*</label><br>
+                        <input type="text" placeholder="Enter address" v-model="address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Company E-mail Address*</label><br>
+                        <input type="email" placeholder="example@gmail.com" v-model="companyEmail">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Phone Number*</label><br>
+                        <input type="tel" placeholder="E.g 08130405070" v-model="companyPhone">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Alternative Number (Optional)</label><br>
+                        <input type="tel" placeholder="E.g 08130405070" v-model="companyAlternativePhone">
+                    </div>
+                </div>
+                <div class="row nav-buttons">
+                    <ul>
+                        <li style="color: #D40100;border: 1px solid #D40100" @click="backToStep1()" class="btn">Back</li>
+                        <li style="background: #D40100;" @click="switchToStep3 ()" class="btn">Continue</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div v-show="step3" class="step-1 step">
+                <input name="First_Name" :value="firstName" style="display: none">
+                <input name="Last_Name" :value="lastName" style="display: none">
+                <input name="Gender" :value="gender" style="display: none">
+                <input name="Email Address" :value="email" style="display: none">
+                <input name="Phone_number" :value="phoneNumber" style="display: none">
+                <input name="Alternative_number" :value="alternativeNumber" style="display: none">
+                <input name="Company_Name" :value="companyName" style="display: none">
+                <input name="Registered_Name" :value="registeredName" style="display: none">
+                <input name="CAC_Number" :value="cacNumber" style="display: none">
+                <input name="Category" :value="category" style="display: none">
+                <input name="Location" :value="location" style="display: none">
+                <input name="Address" :value="address" style="display: none">
+                <input name="Company_Email" :value="companyEmail" style="display: none">
+                <input name="Company_phone_NUmber" :value="companyPhone" style="display: none">
+                <input name="Company_alternative_phone" :value="companyAlternativePhone" style="display: none">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Number of Tables*</label><br>
+                        <input type="number" name="Number_of_tables" placeholder="1020" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Bank Name*</label><br>
+                        <input type="text" name="Bank_name" placeholder="Enter bank name" >
+                    </div>
+                    <div class="col-md-4">
+                        <label>Account Name*</label><br>
+                        <input type="text" name="Account_name" placeholder="Enter account name" >
+                    </div>
+                    <div class="col-md-4">
+                        <label>Account Number*</label><br>
+                        <input type="number" name="Account_number" placeholder="E.g 0582501930">
+                    </div>
+                </div>
+                <div class="row nav-buttons">
+                    <ul>
+                        <li style="color: #D40100;border: 1px solid #D40100" @click="backToStep2()" class="btn">Back</li>
+                        <input type="submit" value="submit" class="btn">
+                        <!--<li style="background: #D40100;">Submit</li>-->
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </form>
+        <div class="color"></div>
         <div class="grid-contain-1 row flex-column-reverse flex-md-row">
                 <div class="first-container col-md-12">
 
@@ -28,159 +182,8 @@
                 </div>-->
 
         </div>
-        <hr style="margin-left:10%;margin-right:10%">
-        <form class="row form-submit" action="https://formsubmit.co/checkretailer@gmail.com" method="POST">
-            <div class="nav">
-                <div class="col-md-4 nav1"><h2 @click="backToStep1()" :class="step1 ? 'active' : 'not-active'">Branch Manager’s Information <h4 style="display:inline-block;font-size: 14px;"> (1of3)</h4></h2></div>
-                <div class="col-md-4 nav2"><h2  @click="switchToStep2()" :class="step2 ? 'active' : 'not-active'">Company Information <h4 style="display:inline-block;font-size: 14px;"> (2of3)</h4></h2></div>
-                <div class="col-md-4 nav3"><h2  @click="switchToStep3 ()" :class="step3 ? 'active' : 'not-active'">Branch Information <h4 style="display:inline-block;font-size: 14px;"> (3of3)</h4></h2></div>
-                <div class="progress-path">
-                    <div class="progress-bar" :style="step1 ? 'width:33%' : step2 ? 'width:66%' : 'width:100%' "></div>
-                </div>
-            </div>
+        <!--<hr style="margin-left:10%;margin-right:10%">-->
 
-            <div v-show="step1" class="step-1 step">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>First Name</label><br>
-                        <input type="text" placeholder="Enter manager’s first name" v-model="firstName">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Surname</label><br>
-                        <input type="text" placeholder="Enter manager’s surname" v-model="lastName">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Gender</label><br>
-                        <select v-model="gender" required>
-                            <option value="" disabled selected>Click to select a gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>E-mail Address</label><br>
-                        <input type="email" placeholder="example@gmail.com" v-model="email">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Phone Number</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="phoneNumber">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Alternative Number (Optional)</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="alternativeNumber">
-                    </div>
-                </div>
-                <div class="row nav-buttons">
-                    <ul>
-                        <li>Back</li>
-                        <li style="background: #D40100;" @click="switchToStep2 ()">Continue</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div v-show="step2" class="step-2 step">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Company Name</label><br>
-                        <input type="text" placeholder="Enter company name" v-model="companyName">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Registered Name </label><br>
-                        <input type="text" placeholder="Enter parent company name" v-model="registeredName">
-                    </div>
-                    <div class="col-md-4">
-                        <label>CAC Number</label><br>
-                        <input type="number" placeholder="E.g 1430035050" v-model="cacNumber">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Category</label><br>
-                        <select v-model="category" required>
-                            <option value="" disabled selected>Category</option>
-                            <option value="Restaurant">Restaurant</option>
-                            <option value="Supermarket">Supermarket</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <label>Location</label><br>
-                        <input type="text" placeholder="Enter location" v-model="location">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Address</label><br>
-                        <input type="text" placeholder="Enter address" v-model="address">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Company E-mail Address</label><br>
-                        <input type="email" placeholder="example@gmail.com" v-model="companyEmail">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Phone Number</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="companyPhone">
-                    </div>
-                    <div class="col-md-4">
-                        <label>Alternative Number (Optional)</label><br>
-                        <input type="tel" placeholder="E.g 08130405070" v-model="companyAlternativePhone">
-                    </div>
-                </div>
-                <div class="row nav-buttons">
-                    <ul>
-                        <li style="background: #F87D5E;" @click="backToStep1()">Back</li>
-                        <li style="background: #D40100;" @click="switchToStep3 ()">Continue</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div v-show="step3" class="step-1 step">
-                <input name="First_Name" :value="firstName" style="display: none">
-                <input name="Last_Name" :value="lastName" style="display: none">
-                <input name="Gender" :value="gender" style="display: none">
-                <input name="Email Address" :value="email" style="display: none">
-                <input name="Phone_number" :value="phoneNumber" style="display: none">
-                <input name="Alternative_number" :value="alternativeNumber" style="display: none">
-                <input name="Company_Name" :value="companyName" style="display: none">
-                <input name="Registered_Name" :value="registeredName" style="display: none">
-                <input name="CAC_Number" :value="cacNumber" style="display: none">
-                <input name="Category" :value="category" style="display: none">
-                <input name="Location" :value="location" style="display: none">
-                <input name="Address" :value="address" style="display: none">
-                <input name="Company_Email" :value="companyEmail" style="display: none">
-                <input name="Company_phone_NUmber" :value="companyPhone" style="display: none">
-                <input name="Company_alternative_phone" :value="companyAlternativePhone" style="display: none">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Number of Tables</label><br>
-                        <input type="number" name="Number_of_tables" placeholder="1020" >
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Bank Name</label><br>
-                        <input type="text" name="Bank_name" placeholder="Enter bank name" >
-                    </div>
-                    <div class="col-md-4">
-                        <label>Account Name</label><br>
-                        <input type="text" name="Account_name" placeholder="Enter account name" >
-                    </div>
-                    <div class="col-md-4">
-                        <label>Account Number</label><br>
-                        <input type="number" name="Account_number" placeholder="E.g 0582501930">
-                    </div>
-                </div>
-                <div class="row nav-buttons">
-                    <ul>
-                        <li style="background: #F87D5E;" @click="backToStep2()">Back</li>
-                        <input type="submit" value="submit">
-                        <!--<li style="background: #D40100;">Submit</li>-->
-                    </ul>
-                </div>
-            </div>
-
-        </form>
 
 
 
@@ -445,6 +448,12 @@ export default {
     /*border: 4px solid green;*/
     padding: 8%;
 }
+.form-border {
+    /*border: 2px solid red;*/
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
 .form-submit .nav h2 {
     font-family: 'Inter';
     font-style: normal;
@@ -471,6 +480,14 @@ export default {
 
 .form-submit .step {
     text-align: left;
+}
+.btn {
+    transition: all 0.4s ease;
+}
+.btn:hover {
+    transform: scale(1.04);
+    transition: all 0.4s ease;
+    opacity: 0.8;
 }
 .step label {
     font-weight: 600;
@@ -508,7 +525,7 @@ input[type='submit'] {
     display: inline-block;
     list-style: none;
     text-align: center;
-    background: #BABABA;
+    /*background: #BABABA;*/
     width: 230px;
     /*height: 44px;*/
     padding-top: 15.2px;
