@@ -78,7 +78,11 @@
                         <select v-model="category" required>
                             <option value="" disabled selected>Category</option>
                             <option value="Restaurant">Restaurant</option>
+                            <option value="Lounge">Lounge</option>
                             <option value="Supermarket">Supermarket</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Bar">Bar</option>
+                            <option value="Cinema">Cinema</option>
                         </select>
                     </div>
                     <div class="col-md-4">
@@ -505,6 +509,19 @@ export default {
     height: 44px;
     padding-left: 10px;
     margin-bottom: 15px;
+    transition: all 0.4s ease;
+}
+.step input:focus {
+    transform: scale(1.03);
+    outline: #EB001B;
+    transition: all 0.4s ease;
+    border: 1px solid #EB001B;
+}
+.step select:focus {
+    transform: scale(1.03);
+    outline: #EB001B;
+    transition: all 0.4s ease;
+    border: 1px solid #EB001B;
 }
 input[type='submit'] {
     width: 230px;
