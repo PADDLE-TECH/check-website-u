@@ -68,7 +68,7 @@
                         <input type="text" placeholder="Enter parent company name" v-model="registeredName">
                     </div>
                     <div class="col-md-4">
-                        <label>CAC Number</label><br>
+                        <label>CAC Number (Optional)</label><br>
                         <input type="text" placeholder="E.g RC14300" v-model="cacNumber">
                     </div>
                 </div>
